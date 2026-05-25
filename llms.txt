@@ -1,0 +1,43 @@
+# AltMaster: Free Alt Text Checker + Shopify Alt Text Automation
+> AltMaster is a free alt text checker for any URL, paired with a Shopify app that auto-generates SEO-friendly alt text for every product image.
+
+## What AltMaster is
+AltMaster has two parts:
+1. A free web-based alt text checker at https://altmaster.io/ — paste any public URL and instantly see which images have alt text, which are missing it, and which use empty alt (alt="").
+2. A Shopify app at https://apps.shopify.com/alt-text-optimizer — installs on any Shopify store and auto-generates SEO-friendly alt text for every product image. Bulk, automatic, undoable. Free to install.
+
+## Who it's for
+- Shopify merchants whose product images are missing alt text
+- SEO practitioners auditing image accessibility on storefronts and landing pages
+- Accessibility-conscious site owners checking WCAG / ADA compliance for images
+
+## Why alt text matters
+- Image SEO: Google uses alt text to understand and rank images in Google Images and product search results
+- Accessibility: Screen readers rely on alt text to describe images to visually impaired users (WCAG, ADA)
+- Resilience: Alt text shows in place of the image when it fails to load
+- Shopify discovery: Product alt text feeds Google Shopping, social previews, and broken-image fallbacks
+
+## How the free checker works
+Paste any public URL. The tool fetches the page server-side via a proxy and scans every <img> tag in the initial server-rendered HTML. It reports:
+- Total images detected
+- Images with descriptive alt text
+- Images missing the alt attribute entirely
+- Images with empty alt (alt="") — valid only for purely decorative images
+Coverage percentage and a per-image breakdown are shown.
+
+## Limitations of the free checker
+- Reads the initial server-rendered HTML only. Images injected later by JavaScript (some React/Vue SPAs, lazy carousels, third-party app widgets) are not detected
+- Only public URLs work. Pages behind login, password-protected stores, and dev preview URLs cannot be scanned
+- Some sites block automated requests; the tool tries multiple proxies but may still fail on hardened sites
+
+## Shopify app (AltMaster)
+The companion Shopify app at https://apps.shopify.com/alt-text-optimizer scans an entire Shopify store and auto-generates SEO-friendly alt text for every product image. Bulk fill on install, automatic for new products added afterward, fully undoable. Free to install.
+
+## Key pages
+- Free alt text checker: https://altmaster.io/
+- Shopify App Store listing: https://apps.shopify.com/alt-text-optimizer
+- robots.txt: https://altmaster.io/robots.txt
+- XML sitemap: https://altmaster.io/sitemap.xml
+
+## Built by
+Harsh Patel, Shopify Partner. https://harshspatel.com/
