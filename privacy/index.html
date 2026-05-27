@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+
+    <title>Privacy Policy — AltMaster</title>
+    <meta
+      name="description"
+      content="How AltMaster handles your data. Minimal collection, no tracking beyond anonymous GA4 analytics, transparent Shopify scopes, and a plain-English breakdown of what we store and don't."
+    />
+    <link rel="canonical" href="https://altmaster.io/privacy/" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://altmaster.io/privacy/" />
+    <meta property="og:title" content="AltMaster Privacy Policy" />
+    <meta
+      property="og:description"
+      content="What AltMaster collects, what it doesn't, and why."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="../css/shared.css" />
+  </head>
+  <body class="page-article">
+    <nav class="site-nav site-nav--inner">
+      <a href="/" class="nav-logo">Alt<span>Master</span></a>
+      <div class="nav-right">
+        <a href="/alt-text-checker/" class="nav-link">Free checker</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/#pricing" class="nav-link">Pricing</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+        <a
+          href="https://apps.shopify.com/alt-text-optimizer"
+          class="nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-altmaster-placement="privacy_nav"
+          >Install AltMaster →</a
+        >
+      </div>
+    </nav>
+
+    <main class="static-page">
+      <div class="section-eyebrow">Privacy Policy</div>
+      <h1>Privacy Policy</h1>
+      <div class="meta-line">Last updated: May 26, 2026</div>
+
+      <p>
+        This page explains what AltMaster collects, what we don't, and what
+        you can do about it. We try to keep the legalese to a minimum.
+      </p>
+
+      <h2>Summary, in plain English</h2>
+      <ul>
+        <li>
+          We don't collect any personal information on
+          <a href="/">altmaster.io</a> or the <a href="/alt-text-checker/">free
+          ALT text checker</a>. No signup, no email field, nothing stored.
+        </li>
+        <li>
+          We use Google Analytics 4 to count anonymous page views and feature
+          usage. No cross-site tracking, no personal identifiers.
+        </li>
+        <li>
+          The Shopify app accesses only the minimum scopes needed to read your
+          products and write ALT text. It does not store your product catalog
+          on our servers beyond what's required to process a bulk run.
+        </li>
+        <li>
+          ALT text written by the app lives inside your Shopify store, not in
+          our database. If you uninstall the app, the ALT text stays.
+        </li>
+      </ul>
+
+      <h2>1. The altmaster.io marketing site</h2>
+      <p>
+        The marketing site (this page, the homepage, blog, about, contact)
+        stores no personal data and uses no first-party cookies for tracking.
+      </p>
+      <p>
+        We load <strong>Google Analytics 4</strong> on these pages to
+        understand traffic and which content people read. GA4 is configured
+        to:
+      </p>
+      <ul>
+        <li>Anonymize IP addresses</li>
+        <li>Disable cross-site advertising signals</li>
+        <li>Use only the standard <code>_ga</code> cookie</li>
+      </ul>
+      <p>
+        You can opt out of GA4 by installing the
+        <a
+          href="https://tools.google.com/dlpage/gaoptout"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google Analytics opt-out browser add-on</a
+        > or by enabling "Do Not Track" / a privacy-focused browser.
+      </p>
+
+      <h2>2. The free ALT text checker</h2>
+      <p>
+        When you paste a URL into the
+        <a href="/alt-text-checker/">free checker</a> at
+        <code>altmaster.io/alt-text-checker/</code>, the page fetches the
+        target URL through a public CORS proxy and parses the HTML in your
+        browser to count images with and without ALT text.
+      </p>
+      <ul>
+        <li>
+          The URL you check <strong>does not</strong> get stored on our
+          servers. We never log the URL or its contents.
+        </li>
+        <li>
+          Anonymous usage events (e.g., "alt_check_complete", with image
+          counts only) are sent to GA4 so we know how many people use the
+          tool. The URL itself is not included in those events.
+        </li>
+        <li>
+          The CORS proxies are operated by third parties (currently
+          corsproxy.io, codetabs.com, allorigins.win, thingproxy.freeboard.io).
+          When the checker fetches a URL, those services see the URL request.
+          See their privacy policies for details.
+        </li>
+      </ul>
+
+      <h2>3. The AltMaster Shopify app</h2>
+      <p>
+        The Shopify app
+        (<a
+          href="https://apps.shopify.com/alt-text-optimizer"
+          target="_blank"
+          rel="noopener noreferrer"
+          >apps.shopify.com/alt-text-optimizer</a
+        >) installs on your Shopify store and requests only the scopes it
+        needs:
+      </p>
+      <ul>
+        <li>
+          <strong>Read products, variants, collections, images</strong> — to
+          scan your catalog and detect missing ALT text
+        </li>
+        <li>
+          <strong>Write product images (ALT field only)</strong> — to apply
+          the ALT text you generate
+        </li>
+      </ul>
+      <p>
+        We do not access customers, orders, payments, draft orders, or any
+        other store data outside the product catalog.
+      </p>
+      <p>
+        Product data is processed in memory during a bulk run and is not
+        retained on our servers beyond what's needed to complete the run.
+        Generated ALT text is written directly into Shopify; if you uninstall
+        the app, the ALT text stays in your store and we delete any session
+        state we held for your shop within 30 days, per Shopify's data
+        retention requirements.
+      </p>
+
+      <h2>4. Third parties we use</h2>
+      <ul>
+        <li>
+          <strong>Shopify</strong> — host platform and API. Your relationship
+          with Shopify is governed by Shopify's terms and privacy policy.
+        </li>
+        <li>
+          <strong>Google Analytics 4</strong> — anonymous traffic analytics
+          on altmaster.io.
+        </li>
+        <li>
+          <strong>OpenAI / generative AI providers</strong> — when the app
+          generates ALT text from a template, product title and variant
+          fields are sent to the AI provider that powers generation. No
+          customer data, no order data. The AI provider does not retain the
+          submitted text for training (per the API agreement).
+        </li>
+      </ul>
+
+      <h2>5. Cookies</h2>
+      <p>
+        altmaster.io sets the <code>_ga</code> and <code>_ga_*</code> cookies
+        from Google Analytics. No advertising cookies, no third-party
+        trackers, no session cookies. The Shopify app itself runs inside the
+        Shopify admin and uses Shopify's session handling.
+      </p>
+
+      <h2>6. Your rights</h2>
+      <p>
+        Under GDPR, CCPA, and similar privacy laws, you have the right to
+        request access to, correction of, or deletion of any personal data
+        we hold about you. Because we hold almost none, most requests are
+        answered with "we don't have anything to give you." For Shopify app
+        data requests, route through the App Store contact and reference
+        your shop URL.
+      </p>
+
+      <h2>7. Changes to this policy</h2>
+      <p>
+        We'll update the "Last updated" date at the top of this page if
+        anything material changes. For significant changes (new third-party
+        services, new data collection), we'll post a note on the homepage.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        Privacy questions or data requests: route through the
+        <a href="/contact/">contact page</a> or open the
+        <a
+          href="https://apps.shopify.com/alt-text-optimizer"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Shopify App Store listing</a
+        >
+        and use the "Contact developer" link.
+      </p>
+    </main>
+
+    <footer>
+      <div class="footer-brand">Alt<span>Master</span></div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/alt-text-checker/">Free checker</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 AltMaster · Built by
+        <a
+          href="https://harshspatel.com/"
+          style="color: inherit"
+          rel="noopener noreferrer"
+          >Harsh Patel</a
+        >
+      </div>
+    </footer>
+
+    <script src="../js/analytics.js"></script>
+    <script>
+      (function () {
+        function boot() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag("js", new Date());
+          gtag("config", "G-KTK1PL4F76");
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-KTK1PL4F76";
+          document.head.appendChild(s);
+        }
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(boot, { timeout: 4000 });
+        } else {
+          window.addEventListener("load", function () { setTimeout(boot, 0); });
+        }
+      })();
+    </script>
+  </body>
+</html>

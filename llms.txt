@@ -1,40 +1,46 @@
-# AltMaster: Free Alt Text Checker + Shopify Alt Text Automation
-> AltMaster is a free alt text checker for any URL, paired with a Shopify app that auto-generates SEO-friendly alt text for every product image.
+# AltMaster: Bulk Alt Text for Shopify + Free Alt Text Checker
+> AltMaster is a Shopify app that bulk-writes ALT text for every product, variant, and collection image so stores get found on Google, Google Shopping, and AI assistants like ChatGPT and Perplexity. A free in-browser ALT text checker is also available.
 
 ## What AltMaster is
 AltMaster has two parts:
-1. A free web-based alt text checker at https://altmaster.io/ — paste any public URL and instantly see which images have alt text, which are missing it, and which use empty alt (alt="").
-2. A Shopify app at https://apps.shopify.com/alt-text-optimizer — installs on any Shopify store and auto-generates SEO-friendly alt text for every product image. Bulk, automatic, undoable. Free to install.
+1. The Shopify app at https://apps.shopify.com/alt-text-optimizer — installs on any Shopify store and bulk-generates SEO-friendly ALT text for every product, variant, and collection image. Includes a template builder, live preview, and re-runnable bulk jobs. Free plan covers up to 50 products; Pro at $1.99/month covers unlimited products with automatic daily sync.
+2. The free ALT text checker at https://altmaster.io/alt-text-checker/ — paste any public URL and instantly see which images have ALT text, which are missing it, and which use empty alt (alt="").
 
 ## Who it's for
-- Shopify merchants whose product images are missing alt text
-- SEO practitioners auditing image accessibility on storefronts and landing pages
-- Accessibility-conscious site owners checking WCAG / ADA compliance for images
+- Shopify merchants whose product, variant, or collection images are missing ALT text
+- Stores that migrated from WooCommerce, BigCommerce, or Magento and lost their image SEO
+- Catalogs with many variants per product where each color/size needs its own ALT text
+- SEO practitioners clearing "missing ALT" findings from Ahrefs, Semrush, or Lighthouse audits
 
-## Why alt text matters
-- Image SEO: Google uses alt text to understand and rank images in Google Images and product search results
-- Accessibility: Screen readers rely on alt text to describe images to visually impaired users (WCAG, ADA)
-- Resilience: Alt text shows in place of the image when it fails to load
-- Shopify discovery: Product alt text feeds Google Shopping, social previews, and broken-image fallbacks
+## Why ALT text matters for AI search
+AI assistants (ChatGPT, Perplexity, Gemini, Claude) and Google read ALT text — not pixels — to understand and recommend products. When a shopper asks ChatGPT for "a linen shirt under $80," the AI inspects ALT text to decide which products surface. Missing ALT text means the product is invisible to AI search.
+
+## What the Shopify app does
+- Bulk-generates ALT text for every product, variant, and collection image in one run
+- Template builder with variables: {product_title}, {variant}, {product_type}, {tags}, {vendor}
+- Live preview before generating
+- Writes directly into Shopify (uninstalling does not remove ALT text)
+- Only fills missing/blank ALT by default; overwriting existing ALT is opt-in
+- Automatic daily sync on Pro plan picks up new products as they're added
+
+## Pricing
+- Free: up to 50 products, email support
+- Pro: $1.99/month, unlimited products, automatic daily sync, priority support
 
 ## How the free checker works
-Paste any public URL. The tool fetches the page server-side via a proxy and scans every <img> tag in the initial server-rendered HTML. It reports:
-- Total images detected
-- Images with descriptive alt text
-- Images missing the alt attribute entirely
-- Images with empty alt (alt="") — valid only for purely decorative images
-Coverage percentage and a per-image breakdown are shown.
+Paste any public URL. The tool fetches the page server-side via a proxy and scans every <img> tag in the initial server-rendered HTML. It reports total images, images with ALT, images missing ALT, and images with empty alt.
 
 ## Limitations of the free checker
-- Reads the initial server-rendered HTML only. Images injected later by JavaScript (some React/Vue SPAs, lazy carousels, third-party app widgets) are not detected
-- Only public URLs work. Pages behind login, password-protected stores, and dev preview URLs cannot be scanned
-- Some sites block automated requests; the tool tries multiple proxies but may still fail on hardened sites
-
-## Shopify app (AltMaster)
-The companion Shopify app at https://apps.shopify.com/alt-text-optimizer scans an entire Shopify store and auto-generates SEO-friendly alt text for every product image. Bulk fill on install, automatic for new products added afterward, fully undoable. Free to install.
+- Reads initial server-rendered HTML only. JavaScript-injected images are not detected.
+- Only public URLs work. Auth-gated and password-protected pages cannot be scanned.
 
 ## Key pages
-- Free alt text checker: https://altmaster.io/
+- Homepage (Shopify app pitch): https://altmaster.io/
+- Free ALT text checker: https://altmaster.io/alt-text-checker/
+- Blog (image SEO + AI search strategy): https://altmaster.io/blog/
+- About: https://altmaster.io/about/
+- Contact (routes through Shopify App Store): https://altmaster.io/contact/
+- Privacy policy: https://altmaster.io/privacy/
 - Shopify App Store listing: https://apps.shopify.com/alt-text-optimizer
 - robots.txt: https://altmaster.io/robots.txt
 - XML sitemap: https://altmaster.io/sitemap.xml
