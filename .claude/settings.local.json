@@ -5,7 +5,9 @@
       "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=500,800 --screenshot=/tmp/altmaster-shots/about-500.png http://localhost:4567/about/)",
       "Bash(python3 -c ' *)",
       "Bash(sed -n '128,142p' css/shared.css)",
-      "Bash(sed -n '480,494p' css/shared.css)"
+      "Bash(sed -n '480,494p' css/shared.css)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=500,800 --virtual-time-budget=1500 --screenshot=/tmp/altmaster-shots/about-burger-open.png http://localhost:4567/about/)",
+      "Bash(sips -Z 1960 \"/Users/harsh/Downloads/hero.png\" --out \"/Users/harsh/Developer/Shopify Apps/AltMaster/img/hero.png\")"
     ]
   }
 }
