@@ -7,11 +7,11 @@
 
     <!-- ── PRIMARY SEO ── -->
     <title>
-      Free Alt Text Checker — Find & Fix Missing Image Alt Tags | AltMaster
+      Free Alt Text Checker: Find & Fix Missing Image Alt Tags | AltMaster
     </title>
     <meta
       name="description"
-      content="Free alt text checker. Paste any URL and instantly see which images are missing alt text. Then fix them all in one click with AltMaster — the Shopify app that auto-generates SEO-friendly alt text for every product image."
+      content="Free alt text checker. Paste any URL and instantly see which images are missing alt text. Then fix them all in one click with AltMaster, the Shopify app that auto-generates SEO-friendly alt text for every product image."
     />
     <meta
       name="keywords"
@@ -26,7 +26,7 @@
     <meta property="og:url" content="https://altmaster.io/alt-text-checker/" />
     <meta
       property="og:title"
-      content="Free Alt Text Checker — Find & Fix Missing Image Alt Tags"
+      content="Free Alt Text Checker: Find & Fix Missing Image Alt Tags"
     />
     <meta
       property="og:description"
@@ -41,7 +41,7 @@
     <meta name="twitter:url" content="https://altmaster.io/alt-text-checker/" />
     <meta
       name="twitter:title"
-      content="Free Alt Text Checker — Find & Fix Missing Image Alt Tags"
+      content="Free Alt Text Checker: Find & Fix Missing Image Alt Tags"
     />
     <meta
       name="twitter:description"
@@ -891,12 +891,25 @@
   <body class="page-tool">
     <nav class="site-nav site-nav--inner">
       <a href="/" class="nav-logo">Alt<span>Master</span></a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
-      <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu" role="button" tabindex="0">
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+      <label
+        for="nav-toggle"
+        class="nav-burger"
+        aria-label="Toggle menu"
+        role="button"
+        tabindex="0"
+      >
         <span></span><span></span><span></span>
       </label>
       <div class="nav-right">
-        <a href="/alt-text-checker/" class="nav-link is-active">Free checker</a>
+        <a href="/alt-text-checker/" class="nav-link is-active"
+          >Free ALT Checker</a
+        >
         <a href="/blog/" class="nav-link">Blog</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="/#pricing" class="nav-link">Pricing</a>
@@ -919,7 +932,7 @@
         <em>missing alt text.</em>
       </h1>
       <p class="lead">
-        Paste any URL. See exactly which images are missing alt text — then fix
+        Paste any URL. See exactly which images are missing alt text, then fix
         them all in one click with <strong>AltMaster</strong>, the Shopify app
         that auto-generates SEO-friendly alt text.
       </p>
@@ -955,8 +968,8 @@
       <div class="altmaster-strip">
         <div class="altmaster-strip-icon" aria-hidden="true">⚡</div>
         <div class="altmaster-strip-text">
-          <strong>On Shopify?</strong> Skip the checker and install AltMaster —
-          it scans your store and auto-fills every missing alt tag in minutes.
+          <strong>On Shopify?</strong> Skip the checker and install AltMaster.
+          It scans your store and auto-fills every missing alt tag in minutes.
         </div>
         <a
           href="https://apps.shopify.com/alt-text-optimizer"
@@ -1053,7 +1066,7 @@
             Editing alt text by hand across dozens of products is brutal.
             <strong style="color: #fff; font-weight: 500">AltMaster</strong>
             scans your entire Shopify store and auto-generates SEO-friendly alt
-            text for every image — bulk, automatic, undoable.
+            text for every image: bulk, automatic, undoable.
           </p>
         </div>
         <a
@@ -1062,7 +1075,7 @@
           target="_blank"
           rel="noopener noreferrer"
           data-altmaster-placement="results_cta"
-          >Install AltMaster — Free
+          >Install AltMaster, Free
           <svg
             width="14"
             height="14"
@@ -1193,9 +1206,9 @@
             <span class="faq-chevron">+</span>
           </button>
           <div class="faq-a">
-            This page is the <em>checker</em> — it tells you which images are
+            This page is the <em>checker</em>: it tells you which images are
             missing alt text on any URL. <strong>AltMaster</strong> is the
-            <em>fixer</em> — a Shopify app that installs on your store and
+            <em>fixer</em>, a Shopify app that installs on your store and
             automatically writes alt text for every product image. Use the
             checker to see the problem; install AltMaster to fix it without
             manual work.
@@ -1215,7 +1228,7 @@
       <div class="footer-brand">Alt<span>Master</span></div>
       <div class="footer-links">
         <a href="/">Home</a>
-        <a href="/alt-text-checker/">Free checker</a>
+        <a href="/alt-text-checker/">Free ALT Checker</a>
         <a href="/blog/">Blog</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
@@ -1428,7 +1441,7 @@
               "Every image has alt text. Excellent for SEO and accessibility.";
           } else if (pct >= 80) {
             verdict =
-              "Mostly good. A handful of images are missing alt text — fix those for full coverage.";
+              "Mostly good. A handful of images are missing alt text. Fix those for full coverage.";
           } else if (pct >= 50) {
             verdict =
               "Coverage is uneven. Worth a pass through your theme and product images.";
@@ -1443,7 +1456,7 @@
           const ctaSub = document.getElementById("cta-sub");
           if (ctaHeadline && ctaSub) {
             if (missingCount === 0 && data.total > 0) {
-              ctaHeadline.textContent = "Keep it that way — automatically.";
+              ctaHeadline.textContent = "Keep it that way, automatically.";
               ctaSub.innerHTML =
                 'Every new product you add risks missing alt text. <strong style="color:#fff;font-weight:500;">AltMaster</strong> watches your Shopify store and fills alt text for new images as you add them. Set it once.';
             } else if (missingCount > 0) {
@@ -1452,7 +1465,7 @@
               ctaSub.innerHTML =
                 "Editing alt text for " +
                 missingCount +
-                ' images by hand is brutal. <strong style="color:#fff;font-weight:500;">AltMaster</strong> scans your Shopify store and auto-generates SEO-friendly alt text for every image — bulk, automatic, undoable.';
+                ' images by hand is brutal. <strong style="color:#fff;font-weight:500;">AltMaster</strong> scans your Shopify store and auto-generates SEO-friendly alt text for every image: bulk, automatic, undoable.';
             }
           }
 
@@ -1463,7 +1476,7 @@
             '<span class="img-badge b-missing">Missing</span>',
             data.total === 0
               ? "No images detected on this page."
-              : "Nothing missing — all images have an alt attribute.",
+              : "Nothing missing, all images have an alt attribute.",
             true,
           );
           document.getElementById("missing-count").textContent =
@@ -1546,7 +1559,7 @@
             "loading",
             '<span class="spinner"></span> Fetching ' +
               escapeHtml(url) +
-              " — this can take 5–15 seconds.",
+              ". This can take 5–15 seconds.",
           );
           resultsEl.classList.remove("is-visible");
 
@@ -1600,7 +1613,7 @@
     <!--
       GA4: replace the property ID below with the AltMaster GA4 property
       once provisioned. Currently points to the Portfolio property
-      (G-KTK1PL4F76) — events will be attributed there until swapped.
+      (G-KTK1PL4F76). Events will be attributed there until swapped.
     -->
     <script>
       (function () {

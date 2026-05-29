@@ -140,7 +140,7 @@
   .nav-link:hover { color: var(--accent); }
   .nav-link.is-active { color: var(--accent); font-weight: 500; }
 
-  /* Hamburger toggle — CSS-only via hidden checkbox */
+  /* Hamburger toggle: CSS-only via hidden checkbox */
   .nav-toggle {
     position: absolute;
     opacity: 0;
@@ -389,7 +389,7 @@
   }
   .footer-links a:hover { color: #fff; }
 
-  /* STATIC PAGE (about, contact, privacy) — narrow centered article layout */
+  /* STATIC PAGE (about, contact, privacy): narrow centered article layout */
   .static-page {
     max-width: 760px;
     margin: 0 auto;
@@ -517,7 +517,7 @@
     }
 
     /* nav-right is an in-flow panel that sits on its own row below the logo/burger.
-       No position:fixed — keeps it pinned to the nav regardless of nav height,
+       No position:fixed, which keeps it pinned to the nav regardless of nav height,
        avoids iOS Safari URL-bar issues, and survives sticky-nav re-layouts. */
     .nav-right {
       flex-basis: 100%;

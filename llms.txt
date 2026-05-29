@@ -3,8 +3,8 @@
 
 ## What AltMaster is
 AltMaster has two parts:
-1. The Shopify app at https://apps.shopify.com/alt-text-optimizer — installs on any Shopify store and bulk-generates SEO-friendly ALT text for every product, variant, and collection image. Includes a template builder, live preview, and re-runnable bulk jobs. Free plan covers up to 50 products; Pro at $1.99/month covers unlimited products with automatic daily sync.
-2. The free ALT text checker at https://altmaster.io/alt-text-checker/ — paste any public URL and instantly see which images have ALT text, which are missing it, and which use empty alt (alt="").
+1. The Shopify app at https://apps.shopify.com/alt-text-optimizer installs on any Shopify store and bulk-generates SEO-friendly ALT text for every product, variant, and collection image. Includes a template builder, live preview, and re-runnable bulk jobs. Free plan covers up to 50 products; Pro at $1.99/month covers unlimited products with automatic daily sync.
+2. The free ALT text checker at https://altmaster.io/alt-text-checker/ lets you paste any public URL and instantly see which images have ALT text, which are missing it, and which use empty alt (alt="").
 
 ## Who it's for
 - Shopify merchants whose product, variant, or collection images are missing ALT text
@@ -13,7 +13,7 @@ AltMaster has two parts:
 - SEO practitioners clearing "missing ALT" findings from Ahrefs, Semrush, or Lighthouse audits
 
 ## Why ALT text matters for AI search
-AI assistants (ChatGPT, Perplexity, Gemini, Claude) and Google read ALT text — not pixels — to understand and recommend products. When a shopper asks ChatGPT for "a linen shirt under $80," the AI inspects ALT text to decide which products surface. Missing ALT text means the product is invisible to AI search.
+AI assistants (ChatGPT, Perplexity, Gemini, Claude) and Google read ALT text, not pixels, to understand and recommend products. When a shopper asks ChatGPT for "a linen shirt under $80," the AI inspects ALT text to decide which products surface. Missing ALT text means the product is invisible to AI search.
 
 ## What the Shopify app does
 - Bulk-generates ALT text for every product, variant, and collection image in one run
@@ -27,10 +27,10 @@ AI assistants (ChatGPT, Perplexity, Gemini, Claude) and Google read ALT text —
 - Free: up to 50 products, email support
 - Pro: $1.99/month, unlimited products, automatic daily sync, priority support
 
-## How the free checker works
+## How the Free ALT Checker works
 Paste any public URL. The tool fetches the page server-side via a proxy and scans every <img> tag in the initial server-rendered HTML. It reports total images, images with ALT, images missing ALT, and images with empty alt.
 
-## Limitations of the free checker
+## Limitations of the Free ALT Checker
 - Reads initial server-rendered HTML only. JavaScript-injected images are not detected.
 - Only public URLs work. Auth-gated and password-protected pages cannot be scanned.
 

@@ -12,7 +12,12 @@
       "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=500,900 --virtual-time-budget=1500 --screenshot=/tmp/altmaster-shots/burger-open-v2.png http://localhost:4567/about/)",
       "Bash(python3 -c \"s=open\\('css/shared.css'\\).read\\(\\); print\\('opens:', s.count\\('{'\\), 'closes:', s.count\\('}'\\)\\)\")",
       "Bash(sed -n '143,152p' css/shared.css)",
-      "Bash(curl -s \"http://localhost:4567/css/shared.css\")"
+      "Bash(curl -s \"http://localhost:4567/css/shared.css\")",
+      "Bash(pkill -f \"repl\")",
+      "Read(//private/tmp/**)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=380,900 --screenshot=/tmp/m2.png \"http://localhost:8765/blog/how-to-add-alt-text-in-shopify/\")",
+      "Bash(sips -g pixelWidth -g pixelHeight m2.png)",
+      "Bash(python3 -)"
     ]
   }
 }

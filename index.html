@@ -7,11 +7,11 @@
 
     <!-- ── PRIMARY SEO ── -->
     <title>
-      AltMaster — Bulk Alt Text for Shopify · Get Found on ChatGPT & Google
+      AltMaster: Bulk Alt Text for Shopify · Get Found on ChatGPT & Google
     </title>
     <meta
       name="description"
-      content="AltMaster writes ALT text for every product, variant, and collection image in your Shopify store — in one bulk run. Get found on Google, Google Shopping, and AI assistants like ChatGPT and Perplexity."
+      content="AltMaster writes ALT text for every product, variant, and collection image in your Shopify store, in one bulk run. Get found on Google, Google Shopping, and AI assistants like ChatGPT and Perplexity."
     />
     <meta
       name="keywords"
@@ -26,7 +26,7 @@
     <meta property="og:url" content="https://altmaster.io/" />
     <meta
       property="og:title"
-      content="AltMaster — Bulk Alt Text for Shopify. Get found on ChatGPT & Google."
+      content="AltMaster: Bulk Alt Text for Shopify. Get found on ChatGPT & Google."
     />
     <meta
       property="og:description"
@@ -41,11 +41,11 @@
     <meta name="twitter:url" content="https://altmaster.io/" />
     <meta
       name="twitter:title"
-      content="AltMaster — Bulk Alt Text for Shopify"
+      content="AltMaster: Bulk Alt Text for Shopify"
     />
     <meta
       name="twitter:description"
-      content="ALT text for every product, variant, and collection — in one bulk run. Get found on Google and AI assistants."
+      content="ALT text for every product, variant, and collection, in one bulk run. Get found on Google and AI assistants."
     />
     <meta name="twitter:image" content="https://altmaster.io/og-image.jpg" />
     <meta name="twitter:creator" content="@iharshspatel" />
@@ -60,7 +60,7 @@
             "@id": "https://altmaster.io/#website",
             "url": "https://altmaster.io/",
             "name": "AltMaster",
-            "description": "Bulk ALT text for Shopify — get found on Google and AI assistants."
+            "description": "Bulk ALT text for Shopify. Get found on Google and AI assistants."
           },
           {
             "@type": "SoftwareApplication",
@@ -116,7 +116,7 @@
                 "name": "Does it work with variant images, not just the main product image?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes — that's a core feature. Each variant image receives its own ALT value based on the variant options, so a red shirt and a blue shirt get different ALT text."
+                  "text": "Yes, that's a core feature. Each variant image receives its own ALT value based on the variant options, so a red shirt and a blue shirt get different ALT text."
                 }
               },
               {
@@ -555,20 +555,13 @@
       .chat-prod-img {
         width: 100%;
         aspect-ratio: 1;
-        background: linear-gradient(135deg, #d4d4d8, #e4e4e7);
+        background: var(--cream-3);
         border-radius: 6px;
         margin-bottom: 8px;
         position: relative;
         overflow: hidden;
-      }
-      .chat-prod-img.a {
-        background: linear-gradient(135deg, #f3f4f6, #d1d5db);
-      }
-      .chat-prod-img.b {
-        background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
-      }
-      .chat-prod-img.c {
-        background: linear-gradient(135deg, #fef3c7, #fde68a);
+        display: block;
+        object-fit: cover;
       }
       .chat-prod-name {
         font-weight: 500;
@@ -1037,7 +1030,7 @@
         <span></span><span></span><span></span>
       </label>
       <div class="nav-right">
-        <a href="/alt-text-checker/" class="nav-link">Free checker</a>
+        <a href="/alt-text-checker/" class="nav-link">Free ALT checker</a>
         <a href="/blog/" class="nav-link">Blog</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="#pricing" class="nav-link">Pricing</a>
@@ -1063,7 +1056,7 @@
       </h1>
       <p class="hero-lead">
         <strong>AltMaster</strong> writes ALT text for every product, variant,
-        and collection image in your store — in one bulk run. Get found in
+        and collection image in your store, in one bulk run. Get found in
         Google search, Google Shopping, and AI assistants like ChatGPT and
         Perplexity.
       </p>
@@ -1169,7 +1162,7 @@
         />
       </picture>
       <p class="screenshot-caption">
-        <!-- Inside the AltMaster app — preview shown for illustration. -->
+        <!-- Inside the AltMaster app. Preview shown for illustration. -->
       </p>
     </div>
 
@@ -1180,7 +1173,7 @@
         <h2>Why ALT Text Is <em>Missed at Scale</em>.</h2>
         <p class="lead">
           Google can't see pixels. ChatGPT can't see pixels. Perplexity can't
-          see pixels. They read ALT text — and when it's missing, your product
+          see pixels. They read ALT text, and when it's missing, your product
           simply doesn't exist to them.
         </p>
       </div>
@@ -1364,13 +1357,22 @@
             hours.
           </p>
           <p>
-            Most stores never do it. Most stores quietly lose traffic — to
+            Most stores never do it. Most stores quietly lose traffic, to
             Google, to Google Shopping, and now to every AI assistant that
             shoppers are asking instead.
           </p>
           <p>
             AltMaster collapses that 40-hour weekend into a 3-minute bulk run.
           </p>
+          <a
+            href="https://apps.shopify.com/alt-text-optimizer"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-altmaster-placement="tool_nav"
+          >
+            Start Optimizing Your ALT Text →</a
+          >
         </div>
       </div>
     </section>
@@ -1414,7 +1416,7 @@
           </div>
         </div>
 
-        <div class="chat-mock" aria-hidden="true">
+        <div class="chat-mock">
           <div class="chat-bubble">
             <div class="chat-avatar user">U</div>
             <div class="chat-body">
@@ -1435,17 +1437,38 @@
               </div>
               <div class="chat-products">
                 <div class="chat-prod">
-                  <div class="chat-prod-img a"></div>
+                  <img
+                    class="chat-prod-img"
+                    src="img/products/sand-linen-shirt.jpg"
+                    alt="Man wearing a sand-colored band-collar linen button-up shirt with the sleeves rolled up"
+                    width="100%"
+                    height=""
+                    loading="lazy"
+                  />
                   <div class="chat-prod-name">Sand linen shirt</div>
                   <div>Northwell · $68</div>
                 </div>
                 <div class="chat-prod">
-                  <div class="chat-prod-img b"></div>
+                  <img
+                    class="chat-prod-img"
+                    src="img/products/indigo-linen-shirt.jpg"
+                    alt="Indigo linen button-up shirt on a wooden hanger over a white tee against a light background"
+                    width="100%"
+                    height=""
+                    loading="lazy"
+                  />
                   <div class="chat-prod-name">Indigo linen shirt</div>
                   <div>Cedar &amp; Co · $74</div>
                 </div>
                 <div class="chat-prod">
-                  <div class="chat-prod-img c"></div>
+                  <img
+                    class="chat-prod-img"
+                    src="img/products/olive-linen-shirt.webp"
+                    alt="Man wearing an olive green long-sleeve linen shirt open over a black tee"
+                    width="100%"
+                    height=""
+                    loading="lazy"
+                  />
                   <div class="chat-prod-name">Olive linen shirt</div>
                   <div>Foxhall · $79</div>
                 </div>
@@ -1499,7 +1522,7 @@
           <span class="step-num">Step 02</span>
           <h3>Build your template</h3>
           <p>
-            Drag in variables — product title, variant, vendor, tags, type.
+            Drag in variables: product title, variant, vendor, tags, type.
             Watch a live preview so you know the exact ALT text you'll generate
             before you commit.
           </p>
@@ -1575,11 +1598,22 @@
             <span class="var-chip">{vendor}</span>
           </div>
 
-          <p>
+          <p style="margin-bottom: 20px">
             Drop variables into a template, add your own connecting words ("in,"
             "by," "from"), and AltMaster fills in the rest from your actual
             Shopify product data.
           </p>
+
+          <a
+            href="https://apps.shopify.com/alt-text-optimizer"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-altmaster-placement="tool_nav"
+            style="margin-top: 20px"
+          >
+            Start Optimizing Your ALT Text →</a
+          >
         </div>
 
         <div class="tpl-mock">
@@ -1632,7 +1666,7 @@
           </div>
           <h3>You just migrated to Shopify</h3>
           <p>
-            WooCommerce, BigCommerce, Magento — migrations strip ALT text.
+            WooCommerce, BigCommerce, Magento. Migrations strip ALT text.
             AltMaster restores image SEO across your whole catalog in one run,
             so you don't lose ranking during the move.
           </p>
@@ -1654,7 +1688,7 @@
               <circle cx="10" cy="20" r="2.5" />
             </svg>
           </div>
-          <h3>You sell variants — lots of them</h3>
+          <h3>You sell variants, lots of them</h3>
           <p>
             Apparel, accessories, anything with 5–20 colors and sizes per
             product. Variant-specific ALT text means each color and size can
@@ -1829,7 +1863,7 @@
               >
                 <path d="M20 6 9 17l-5-5" />
               </svg>
-              Automatic daily sync — new products covered as you add them
+              Automatic daily sync, new products covered as you add them
             </li>
             <li>
               <svg
@@ -1908,7 +1942,7 @@
             <span class="faq-chevron">+</span>
           </button>
           <div class="faq-a">
-            Yes — and that's a core feature. Each variant image receives its own
+            Yes, and that's a core feature. Each variant image receives its own
             ALT value based on the variant options for that image, so a red
             shirt and a blue shirt get different ALT text.
           </div>
@@ -1933,7 +1967,7 @@
           </button>
           <div class="faq-a">
             A few minutes for most stores with several hundred products. Larger
-            catalogs scale linearly — a 2,000-product store typically completes
+            catalogs scale linearly: a 2,000-product store typically completes
             in under 10 minutes.
           </div>
         </div>
@@ -1997,7 +2031,7 @@
       <div class="footer-brand">Alt<span>Master</span></div>
       <div class="footer-links">
         <a href="/">Home</a>
-        <a href="/alt-text-checker/">Free checker</a>
+        <a href="/alt-text-checker/">Free ALT checker</a>
         <a href="/blog/">Blog</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
