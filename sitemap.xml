@@ -22,6 +22,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://altmaster.io/blog/why-your-products-dont-show-up-on-chatgpt/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://altmaster.io/blog/importance-of-alt-text-in-shopify/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://altmaster.io/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
