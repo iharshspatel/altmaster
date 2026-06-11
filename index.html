@@ -11,7 +11,7 @@
     </title>
     <meta
       name="description"
-      content="AltMaster writes ALT text for every product, variant, and collection image in your Shopify store, in one bulk run. Get found on Google, Google Shopping, and AI assistants like ChatGPT and Perplexity."
+      content="AltMaster writes SEO-friendly ALT text for every Shopify product, variant, and collection image in one bulk run. Get found on Google, ChatGPT, and Perplexity."
     />
     <meta
       name="keywords"
@@ -57,11 +57,31 @@
             "@id": "https://altmaster.io/#website",
             "url": "https://altmaster.io/",
             "name": "AltMaster",
-            "description": "Bulk ALT text for Shopify. Get found on Google and AI assistants."
+            "description": "Bulk ALT text for Shopify. Get found on Google and AI assistants.",
+            "publisher": { "@id": "https://altmaster.io/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://altmaster.io/#organization",
+            "name": "AltMaster",
+            "url": "https://altmaster.io/",
+            "logo": "https://altmaster.io/favicon.svg",
+            "image": "https://altmaster.io/og-image.jpg",
+            "description": "AltMaster is a Shopify app that bulk-generates SEO-friendly ALT text for every product, variant, and collection image, so stores get found on Google, Google Shopping, and AI assistants like ChatGPT and Perplexity.",
+            "founder": {
+              "@type": "Person",
+              "name": "Harsh Patel",
+              "url": "https://harshspatel.com/"
+            },
+            "sameAs": [
+              "https://apps.shopify.com/alt-text-optimizer",
+              "https://twitter.com/iharshspatel"
+            ]
           },
           {
             "@type": "SoftwareApplication",
             "@id": "https://altmaster.io/#app",
+            "publisher": { "@id": "https://altmaster.io/#organization" },
             "name": "AltMaster: Alt Text Optimizer",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Shopify",
@@ -1150,11 +1170,14 @@
     <!-- ───────────────────────── HERO SCREENSHOT ───────────────────────── -->
     <div class="screenshot-frame">
       <picture>
-        <source srcset="img/hero.png" type="image/png" />
+        <source srcset="img/hero.webp" type="image/webp" />
         <img
-          src="img/hero.png"
+          src="img/hero.webp"
           alt="AltMaster app inside the Shopify admin"
           class="hero-shot"
+          width="1960"
+          height="1399"
+          fetchpriority="high"
         />
       </picture>
       <p class="screenshot-caption">
@@ -1435,7 +1458,7 @@
                 <div class="chat-prod">
                   <img
                     class="chat-prod-img"
-                    src="img/products/sand-linen-shirt.jpg"
+                    src="img/products/sand-linen-shirt.webp"
                     alt="Man wearing a sand-colored band-collar linen button-up shirt with the sleeves rolled up"
                     width="100%"
                     height=""
@@ -1447,7 +1470,7 @@
                 <div class="chat-prod">
                   <img
                     class="chat-prod-img"
-                    src="img/products/indigo-linen-shirt.jpg"
+                    src="img/products/indigo-linen-shirt.webp"
                     alt="Indigo linen button-up shirt on a wooden hanger over a white tee against a light background"
                     width="100%"
                     height=""

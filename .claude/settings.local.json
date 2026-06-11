@@ -19,5 +19,8 @@
       "Bash(sips -g pixelWidth -g pixelHeight m2.png)",
       "Bash(python3 -)"
     ]
+  },
+  "enabledPlugins": {
+    "claude-seo@agricidaniel-claude-seo": true
   }
 }

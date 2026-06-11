@@ -28,7 +28,7 @@ AI assistants (ChatGPT, Perplexity, Gemini, Claude) and Google read ALT text, no
 - Pro: $1.99/month, unlimited products, automatic daily sync, priority support
 
 ## How the Free ALT Checker works
-Paste any public URL. The tool fetches the page server-side via a proxy and scans every <img> tag in the initial server-rendered HTML. It reports total images, images with ALT, images missing ALT, and images with empty alt.
+Paste any public URL. The tool fetches the page through a public CORS proxy from your browser and scans every <img> tag in the returned server-rendered HTML. It reports total images, images with ALT, images missing ALT, and images with empty alt.
 
 ## Limitations of the Free ALT Checker
 - Reads initial server-rendered HTML only. JavaScript-injected images are not detected.
@@ -44,6 +44,13 @@ Paste any public URL. The tool fetches the page server-side via a proxy and scan
 - Shopify App Store listing: https://apps.shopify.com/alt-text-optimizer
 - robots.txt: https://altmaster.io/robots.txt
 - XML sitemap: https://altmaster.io/sitemap.xml
+
+## Blog posts
+- [Why Your Products Don't Show Up on ChatGPT](https://altmaster.io/blog/why-your-products-dont-show-up-on-chatgpt/): Why AI assistants read ALT text instead of pixels, and how missing ALT text makes Shopify products invisible to ChatGPT, Perplexity, and Gemini.
+- [How to Add ALT Text in Shopify](https://altmaster.io/blog/how-to-add-alt-text-in-shopify/): Step-by-step guide to adding ALT text in the Shopify admin, and why it matters for SEO and AI search.
+- [Importance of ALT Text in Your Shopify Store](https://altmaster.io/blog/importance-of-alt-text-in-shopify/): How ALT text serves SEO, accessibility, and legal/ADA compliance at once, plus a writing formula.
+- [Shopify Image Size Guide for 2026](https://altmaster.io/blog/shopify-image-size-guide-2026/): Recommended dimensions, file formats, and compression rules for product, hero, banner, logo, and blog images.
+- [How to Add Images to Your Shopify Store](https://altmaster.io/blog/how-to-add-images-in-shopify/): Step-by-step walkthrough for uploading, reordering, and optimizing product images in Shopify.
 
 ## Built by
 Harsh Patel, Shopify Partner. https://harshspatel.com/
