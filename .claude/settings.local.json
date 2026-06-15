@@ -17,7 +17,8 @@
       "Read(//private/tmp/**)",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=380,900 --screenshot=/tmp/m2.png \"http://localhost:8765/blog/how-to-add-alt-text-in-shopify/\")",
       "Bash(sips -g pixelWidth -g pixelHeight m2.png)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "mcp__claude_ai_Google_Drive__read_file_content"
     ]
   },
   "enabledPlugins": {
