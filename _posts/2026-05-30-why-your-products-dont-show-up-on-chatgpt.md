@@ -1,45 +1,62 @@
 ---
 layout: post
-title: "Why Your Products Don't Show Up on ChatGPT (And How ALT Text Fixes It)"
-seo_title: "Why Your Products Don't Show Up on ChatGPT | AltMaster"
-og_title: "Why Your Products Don't Show Up on ChatGPT (And How ALT Text Fixes It)"
-tw_title: "Why Your Products Don't Show Up on ChatGPT"
-description: "When shoppers ask ChatGPT or Perplexity for a product, AI reads text, not pixels. See what AI reads on your Shopify store and how ALT text gets you recommended."
-og_description: "AI assistants read ALT text, not pixels, to decide which products to recommend. What ChatGPT, Perplexity, and Gemini actually see on a Shopify storefront."
-tw_description: "AI assistants read ALT text, not pixels. Here's how to get your Shopify products recommended by ChatGPT, Perplexity, and Gemini."
-schema_description: "AI assistants read ALT text, not pixels, to decide which products to recommend. What ChatGPT, Perplexity, and Gemini actually see on a Shopify storefront, and how to get your products into their answers."
-keywords: "products not showing on chatgpt, shopify ai search, alt text for ai search, perplexity shopify, gemini product recommendations, ai seo shopify, llms.txt, altmaster"
+title: Why Your Products Don't Show Up on ChatGPT (And How ALT Text Fixes It)
 date: 2026-05-30
-category: "Strategy · AI Search"
-card_tag: "Strategy"
-read_time: "8 min read"
-card_excerpt: "AI assistants read ALT text, not pixels, to decide which products to recommend. A walkthrough of what ChatGPT, Perplexity, and Gemini actually see when they scan a Shopify storefront."
+category: Strategy · AI Search
+description: When shoppers ask ChatGPT or Perplexity for a product, AI reads text, not pixels. See what AI reads on your Shopify store and how ALT text gets you recommended.
+card_tag: Strategy
+card_excerpt: AI assistants read ALT text, not pixels, to decide which products to recommend. A walkthrough of what ChatGPT, Perplexity, and Gemini actually see when they scan a Shopify storefront.
+read_time: 8 min read
+card_title: ''
 summary: "**Short answer:** When a shopper asks ChatGPT, Perplexity, or Gemini for a product, the AI doesn't look at your store the way a person does. It reads text, not pixels, pulling from titles, descriptions, structured data, and image ALT text. If your images are blank, your products are effectively invisible to AI search. Here's what AI assistants actually see on your store, and how to get yours into their answers."
-toc:
-  - { num: "01", label: "What AI sees", anchor: "what-ai-sees" }
-  - { num: "02", label: "Why images are invisible", anchor: "why-invisible" }
-  - { num: "03", label: "How ALT text bridges it", anchor: "alt-text-bridge" }
-  - { num: "04", label: "Same as Google SEO", anchor: "same-as-google" }
-  - { num: "05", label: "How to fix it", anchor: "how-to-fix" }
-  - { num: "06", label: "Do it with AltMaster", anchor: "altmaster" }
-  - { num: "07", label: "FAQs", anchor: "faqs" }
 quick_facts:
-  - { text: "AI reads text, not pixels" }
-  - { text: "Blank ALT = no AI recommendation" }
-  - { text: "Same work Google rewards" }
-  - { text: "AltMaster fixes a whole catalog in one run", href: "#altmaster" }
+  - text: AI reads text, not pixels
+  - text: Blank ALT = no AI recommendation
+  - text: Same work Google rewards
+  - text: AltMaster fixes a whole catalog in one run
+    href: '#altmaster'
 faq:
-  - q: "Can ChatGPT actually recommend products from my Shopify store?"
+  - q: Can ChatGPT actually recommend products from my Shopify store?
     a: "Yes, but only if it can read your store. AI assistants with browsing or search pull from indexed, text-based data: product titles, descriptions, structured data, and image ALT text. If your products are well described in text, they're eligible to be recommended. If your images are blank and your descriptions are thin, there's nothing for the AI to surface."
-  - q: "Why does ALT text matter for AI search if it's just for accessibility?"
-    a: "ALT text was created for accessibility, but it doubles as the only text description many product images have. AI assistants can't see pixels; they read the text attached to an image to know what it shows. For a store whose photos do most of the selling, ALT text is often the difference between an AI understanding your product and ignoring it."
-  - q: "Do I need to do anything special for ChatGPT versus Google?"
-    a: "Mostly no. The same fundamentals, descriptive ALT text, clear product titles, real descriptions, and structured data, feed both Google and AI assistants. AI search rewards the exact work that's been good SEO practice for years. The difference is that AI is far less forgiving of blanks and filler, because it can't fall back on visual ranking signals."
-  - q: "How do I check what AI sees on my store?"
+  - q: Why does ALT text matter for AI search if it's just for accessibility?
+    a: ALT text was created for accessibility, but it doubles as the only text description many product images have. AI assistants can't see pixels; they read the text attached to an image to know what it shows. For a store whose photos do most of the selling, ALT text is often the difference between an AI understanding your product and ignoring it.
+  - q: Do I need to do anything special for ChatGPT versus Google?
+    a: Mostly no. The same fundamentals, descriptive ALT text, clear product titles, real descriptions, and structured data, feed both Google and AI assistants. AI search rewards the exact work that's been good SEO practice for years. The difference is that AI is far less forgiving of blanks and filler, because it can't fall back on visual ranking signals.
+  - q: How do I check what AI sees on my store?
     a: "Open a product page, view its source, and look at the `alt` attributes on your image tags. If you see blank alt values or filenames like `IMG_4872.jpg`, that's exactly what the AI sees: nothing useful. You can also run your store through AltMaster's free ALT checker to get a count of how many images are missing text."
-  - q: "Will fixing ALT text get me into ChatGPT results overnight?"
-    a: "No. AI assistants work from indexes that have to be recrawled and refreshed, the same lag you see with Google. Fixing ALT text makes your products eligible and understandable; the visibility builds as those indexes update over the following weeks. It's foundational work, not a switch."
+  - q: Will fixing ALT text get me into ChatGPT results overnight?
+    a: No. AI assistants work from indexes that have to be recrawled and refreshed, the same lag you see with Google. Fixing ALT text makes your products eligible and understandable; the visibility builds as those indexes update over the following weeks. It's foundational work, not a switch.
+seo_title: Why Your Products Don't Show Up on ChatGPT | AltMaster
+keywords: products not showing on chatgpt, shopify ai search, alt text for ai search, perplexity shopify, gemini product recommendations, ai seo shopify, llms.txt, altmaster
+og_title: Why Your Products Don't Show Up on ChatGPT (And How ALT Text Fixes It)
+og_description: AI assistants read ALT text, not pixels, to decide which products to recommend. What ChatGPT, Perplexity, and Gemini actually see on a Shopify storefront.
+tw_title: Why Your Products Don't Show Up on ChatGPT
+tw_description: AI assistants read ALT text, not pixels. Here's how to get your Shopify products recommended by ChatGPT, Perplexity, and Gemini.
+schema_description: AI assistants read ALT text, not pixels, to decide which products to recommend. What ChatGPT, Perplexity, and Gemini actually see on a Shopify storefront, and how to get your products into their answers.
+toc:
+  - num: '01'
+    label: What AI sees
+    anchor: what-ai-sees
+  - num: '02'
+    label: Why images are invisible
+    anchor: why-invisible
+  - num: '03'
+    label: How ALT text bridges it
+    anchor: alt-text-bridge
+  - num: '04'
+    label: Same as Google SEO
+    anchor: same-as-google
+  - num: '05'
+    label: How to fix it
+    anchor: how-to-fix
+  - num: '06'
+    label: Do it with AltMaster
+    anchor: altmaster
+  - num: '07'
+    label: FAQs
+    anchor: faqs
 ---
+
 <p>
   Quick question: have you ever asked ChatGPT to recommend a product?
   Something like "best minimalist leather wallet under $50" or "a
