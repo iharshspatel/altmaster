@@ -1,0 +1,45 @@
+title: AltMaster
+url: "https://altmaster.io"
+author: Harsh Patel
+lang: en
+
+# Posts render to /blog/<slug>/ — same URLs as the current hand-built folders.
+permalink: /blog/:title/
+
+# Keep straight apostrophes/quotes (match the existing hand-built posts; no curly
+# substitution), so summaries read consistently with the article body.
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Constants the post layout reuses, so they live in exactly one place.
+brand:
+  ga_id: "G-DEEZ0Q0H0X"
+  twitter: "@iharshspatel"
+  author_name: "Harsh Patel"
+  author_url: "https://harshspatel.com/"
+  author_avatar: "H"
+  author_bio: "Shopify Partner and maker of AltMaster. Helps merchants get found on Google and AI search by fixing image SEO at the source."
+  publisher: "AltMaster"
+  default_image: "https://altmaster.io/og-image.jpg"
+  app_url: "https://apps.shopify.com/alt-text-optimizer"
+  nav_cta_url: "https://apps.shopify.com/alt-text-optimizer/?utm_campaign=content-marketing&utm_medium=header-button&utm_source=altmaster-io"
+  css_version: "20260527"
+
+# Keep Jekyll from copying build/tooling files into the published site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .claude
+  - _site_poc
+  - _preview
+  - scratchpad
+  - admin/SETUP.md
