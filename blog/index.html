@@ -1,3 +1,7 @@
+---
+# Front matter enables Liquid. Live cards are generated from the posts
+# collection, so publishing a post lists it here automatically.
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -103,7 +107,7 @@
       <div class="blog-soon-banner">
         <span class="blog-soon-banner-dot" aria-hidden="true"></span>
         <div>
-          <strong>Six posts are live.</strong> We're writing the playbook for
+          <strong>{{ site.posts | size }} posts are live.</strong> We're writing the playbook for
           image SEO in the AI search era, and more are on the way. Follow
           <a
             href="https://twitter.com/iharshspatel"
@@ -116,115 +120,18 @@
       </div>
 
       <div class="blog-grid">
-        <a
-          href="/blog/how-to-add-alt-text-in-shopify-using-ai/"
-          class="blog-card"
-        >
-          <span class="blog-card-tag">Guide</span>
-          <h3 class="blog-card-title">
-            How to Write Alt Text for Your Shopify Store Using AI
-          </h3>
-          <p class="blog-card-excerpt">
-            AI can generate SEO-friendly alt text for every product image in
-            seconds, but only if you set it up right. Where AI wins, where it
-            falls short, and how to run it across your whole catalog.
-          </p>
+{%- for post in site.posts %}
+        <a href="{{ post.url }}" class="blog-card">
+          <span class="blog-card-tag">{{ post.card_tag }}</span>
+          <h3 class="blog-card-title">{{ post.card_title | default: post.title }}</h3>
+          <p class="blog-card-excerpt">{{ post.card_excerpt }}</p>
           <div class="blog-card-meta">
-            <span>June 15, 2026</span>
+            <span>{{ post.date | date: "%B %-d, %Y" }}</span>
             <span>·</span>
-            <span>6 min read</span>
+            <span>{{ post.read_time }}</span>
           </div>
         </a>
-
-        <a href="/blog/shopify-image-size-guide-2026/" class="blog-card">
-          <span class="blog-card-tag">Guide</span>
-          <h3 class="blog-card-title">Shopify Image Size Guide for 2026</h3>
-          <p class="blog-card-excerpt">
-            Recommended dimensions, file formats, and compression targets for
-            every image type on your store - products, hero, banner, logo, and
-            blog - so it loads fast and ranks in 2026.
-          </p>
-          <div class="blog-card-meta">
-            <span>June 8, 2026</span>
-            <span>·</span>
-            <span>7 min read</span>
-          </div>
-        </a>
-
-        <a href="/blog/how-to-add-images-in-shopify/" class="blog-card">
-          <span class="blog-card-tag">Guide</span>
-          <h3 class="blog-card-title">
-            How to Add Images to Your Shopify Store
-          </h3>
-          <p class="blog-card-excerpt">
-            A step-by-step guide to uploading product images in Shopify, the
-            right sizes and formats, how to reorder them, and why ALT text
-            decides whether they rank.
-          </p>
-          <div class="blog-card-meta">
-            <span>June 5, 2026</span>
-            <span>·</span>
-            <span>6 min read</span>
-          </div>
-        </a>
-
-        <a
-          href="/blog/why-your-products-dont-show-up-on-chatgpt/"
-          class="blog-card"
-        >
-          <span class="blog-card-tag">Strategy</span>
-          <h3 class="blog-card-title">
-            Why Your Products Don't Show Up on ChatGPT (And How ALT Text Fixes
-            It)
-          </h3>
-          <p class="blog-card-excerpt">
-            AI assistants read ALT text, not pixels, to decide which products to
-            recommend. A walkthrough of what ChatGPT, Perplexity, and Gemini
-            actually see when they scan a Shopify storefront.
-          </p>
-          <div class="blog-card-meta">
-            <span>May 30, 2026</span>
-            <span>·</span>
-            <span>8 min read</span>
-          </div>
-        </a>
-
-        <a
-          href="/blog/importance-of-alt-text-in-shopify/"
-          class="blog-card"
-        >
-          <span class="blog-card-tag">Guide</span>
-          <h3 class="blog-card-title">
-            Importance of ALT Text in Your Shopify Store
-          </h3>
-          <p class="blog-card-excerpt">
-            Alt text does three jobs at once - SEO, accessibility, and legal
-            compliance. What every Shopify merchant needs to know, plus a simple
-            formula for writing it.
-          </p>
-          <div class="blog-card-meta">
-            <span>May 30, 2026</span>
-            <span>·</span>
-            <span>7 min read</span>
-          </div>
-        </a>
-
-        <a href="/blog/how-to-add-alt-text-in-shopify/" class="blog-card">
-          <span class="blog-card-tag">Guide</span>
-          <h3 class="blog-card-title">
-            How to Add ALT Text in Shopify (And Why You're Losing Sales Without
-            It)
-          </h3>
-          <p class="blog-card-excerpt">
-            What ALT text is, why it matters for SEO and AI search, and the
-            step-by-step way to add it to your store today, by hand or in bulk.
-          </p>
-          <div class="blog-card-meta">
-            <span>May 29, 2026</span>
-            <span>·</span>
-            <span>8 min read</span>
-          </div>
-        </a>
+{%- endfor %}
 
         <div class="blog-card blog-card-soon" aria-disabled="true">
           <span class="blog-card-tag">Playbook · Coming soon</span>

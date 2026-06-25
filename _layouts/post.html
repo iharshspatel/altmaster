@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+
+    {%- comment -%} Cascade: explicit override -> sensible default. New posts only set title + description. {%- endcomment -%}
+    {%- assign canonical = site.url | append: page.url -%}
+    {%- assign og_title = page.og_title | default: page.title -%}
+    {%- assign og_description = page.og_description | default: page.description -%}
+    {%- assign tw_title = page.tw_title | default: page.title -%}
+    {%- assign tw_description = page.tw_description | default: page.description -%}
+    {%- assign image = page.image | default: site.brand.default_image -%}
+    {%- comment -%} CMS stores cover images as a root-relative path (/blog/...); make it absolute for OG/Twitter/schema. {%- endcomment -%}
+    {%- unless image contains '://' -%}{%- assign image = site.url | append: image -%}{%- endunless -%}
+    {%- assign schema_headline = page.schema_headline | default: og_title -%}
+    {%- assign schema_description = page.schema_description | default: page.description -%}
+    {%- assign published = page.date | date: "%Y-%m-%d" -%}
+    {%- assign modified = page.modified | default: page.date | date: "%Y-%m-%d" -%}
+
+    <!-- ── PRIMARY SEO ── -->
+    <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }} | AltMaster{% endif %}</title>
+    <meta name="description" content="{{ page.description | escape }}" />
+    <meta name="keywords" content="{{ page.keywords | escape }}" />
+    <meta name="author" content="{{ site.brand.author_name }}" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ canonical }}" />
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ canonical }}" />
+    <meta property="og:title" content="{{ og_title | escape }}" />
+    <meta property="og:description" content="{{ og_description | escape }}" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta property="og:site_name" content="AltMaster" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:published_time" content="{{ published }}" />
+    <meta property="article:author" content="{{ site.brand.author_name }}" />
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ tw_title | escape }}" />
+    <meta name="twitter:description" content="{{ tw_description | escape }}" />
+    <meta name="twitter:image" content="{{ image }}" />
+    <meta name="twitter:creator" content="{{ site.brand.twitter }}" />
+
+    <!-- ── JSON-LD SCHEMA ── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "{{ canonical }}#article",
+            "headline": {{ schema_headline | jsonify }},
+            "description": {{ schema_description | jsonify }},
+            "datePublished": "{{ published }}",
+            "dateModified": "{{ modified }}",
+            "url": "{{ canonical }}",
+            "image": "{{ image }}",
+            "author": {
+              "@type": "Person",
+              "name": {{ site.brand.author_name | jsonify }},
+              "url": "{{ site.brand.author_url }}"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": {{ site.brand.publisher | jsonify }},
+              "url": "{{ site.url }}/"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "{{ canonical }}"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{ site.url }}/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "{{ site.url }}/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": {{ page.breadcrumb | default: page.tw_title | default: page.title | jsonify }},
+                "item": "{{ canonical }}"
+              }
+            ]
+          }{% if page.faq %},
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {%- for item in page.faq %}
+              {
+                "@type": "Question",
+                "name": {{ item.q | jsonify }},
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": {{ item.a | markdownify | strip_html | strip | jsonify }}
+                }
+              }{% unless forloop.last %},{% endunless %}
+              {%- endfor %}
+            ]
+          }{% endif %}
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="../../css/shared.css?v={{ site.brand.css_version }}" />
+    <style>
+      /* Shared supplements to the article layout — available to every post so
+         authors never touch CSS. Superset of the per-post blocks the old
+         hand-built posts each carried locally. */
+      .article-body figure {
+        margin: 28px 0;
+      }
+      .article-body figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--cream-3);
+        display: block;
+      }
+      .article-body figcaption {
+        font-size: 13px;
+        color: var(--ink-3);
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+      .article-body code {
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        background: var(--cream-2);
+        border: 1px solid var(--cream-3);
+        border-radius: 5px;
+        padding: 1px 6px;
+      }
+      .spec-card {
+        background: var(--cream-2);
+        border: 1px solid var(--cream-3);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 8px 0 24px;
+      }
+      .spec-card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .spec-card li {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--cream-3);
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--ink-2);
+      }
+      .spec-card li:last-child {
+        border-bottom: none;
+      }
+      .spec-card li .spec-label {
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .spec-card li .spec-val {
+        text-align: right;
+        font-weight: 600;
+        color: var(--green);
+        white-space: nowrap;
+      }
+      .alt-example {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin: 8px 0 24px;
+      }
+      .alt-example .box {
+        border-radius: 12px;
+        padding: 16px 18px;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+      .alt-example .bad {
+        background: #fdf1f1;
+        border: 1px solid #f3d2d2;
+      }
+      .alt-example .good {
+        background: var(--green-light);
+        border: 1px solid #cfe5dd;
+      }
+      .alt-example .box-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .alt-example .bad .box-label {
+        color: #c0392b;
+      }
+      .alt-example .good .box-label {
+        color: var(--green);
+      }
+      .alt-example .box .sample {
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .alt-example .box ul {
+        margin: 0 0 0 18px;
+      }
+      .alt-example .box li {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: var(--ink-2);
+      }
+      .faq-block {
+        border-top: 1px solid var(--cream-3);
+        padding: 20px 0 4px;
+      }
+      .faq-block h3 {
+        margin: 0 0 8px;
+      }
+      .faq-block p {
+        margin: 0;
+      }
+      @media (max-width: 600px) {
+        .spec-card li {
+          flex-direction: column;
+          gap: 2px;
+        }
+        .spec-card li .spec-val {
+          text-align: left;
+        }
+        .alt-example {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="page-article">
+    <nav class="site-nav site-nav--inner">
+      <a href="/" class="nav-logo">Alt<span>Master</span></a>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+      <label
+        for="nav-toggle"
+        class="nav-burger"
+        aria-label="Toggle menu"
+        role="button"
+        tabindex="0"
+      >
+        <span></span><span></span><span></span>
+      </label>
+      <div class="nav-right">
+        <a href="/alt-text-checker/" class="nav-link">Free ALT Checker</a>
+        <a href="/blog/" class="nav-link is-active">Blog</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/#pricing" class="nav-link">Pricing</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+        <a
+          href="{{ site.brand.nav_cta_url }}"
+          class="nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-altmaster-placement="post_nav"
+          >Install AltMaster →</a
+        >
+      </div>
+    </nav>
+
+    <main class="page-wrap">
+      <!-- ARTICLE -->
+      <article>
+        <span class="article-category">{{ page.category }}</span>
+        <h1>{{ page.title }}</h1>
+
+        <div class="article-meta">
+          <div class="meta-author">
+            <div class="author-avatar">{{ site.brand.author_avatar }}</div>
+            {{ site.brand.author_name }}
+          </div>
+          <span>·</span>
+          <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+          <span>·</span>
+          <span>{{ page.read_time }}</span>
+        </div>
+
+        <div class="article-summary">
+          {{ page.summary | markdownify }}
+        </div>
+
+        <div class="article-body">
+          {{ content }}
+          {%- if page.faq %}
+          <h2 id="faqs">FAQs</h2>
+          {%- for item in page.faq %}
+          <div class="faq-block">
+            <h3>{{ item.q }}</h3>
+            {{ item.a | markdownify }}
+          </div>
+          {%- endfor %}
+          {%- endif %}
+        </div>
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>In this article</h4>
+          <ul class="toc-list">
+            {%- if page.toc %}
+            {%- for t in page.toc %}
+            <li>
+              <a href="#{{ t.anchor }}"
+                ><span class="toc-num">{{ t.num }}</span> {{ t.label }}</a
+              >
+            </li>
+            {%- endfor %}
+            {%- else %}
+            {%- assign sections = content | split: '<h2 id="' %}
+            {%- for chunk in sections offset: 1 %}
+            {%- assign anchor = chunk | split: '"' | first %}
+            {%- assign label = chunk | split: '>' | last | split: '</h2' | first %}
+            <li>
+              <a href="#{{ anchor }}"
+                ><span class="toc-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span> {{ label }}</a
+              >
+            </li>
+            {%- endfor %}
+            {%- if page.faq %}
+            <li>
+              <a href="#faqs"><span class="toc-num">{{ sections.size | prepend: '0' | slice: -2, 2 }}</span> FAQs</a>
+            </li>
+            {%- endif %}
+            {%- endif %}
+          </ul>
+        </div>
+
+        <div class="sidebar-card sidebar-author">
+          <div class="sidebar-avatar">{{ site.brand.author_avatar }}</div>
+          <h4>{{ site.brand.author_name }}</h4>
+          <p>{{ site.brand.author_bio }}</p>
+          <a
+            href="{{ site.brand.app_url }}"
+            class="sidebar-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-altmaster-placement="post_sidebar"
+            >Install AltMaster →</a
+          >
+        </div>
+
+        {%- if page.quick_facts %}
+        <div class="sidebar-card">
+          <h4>Quick facts</h4>
+          <ul class="toc-list">
+            {%- for fact in page.quick_facts %}
+            <li>
+              {%- if fact.href %}
+              <a href="{{ fact.href }}"
+                ><span class="toc-num">→</span> {{ fact.text }}</a
+              >
+              {%- else %}
+              <span class="toc-fact"
+                ><span class="toc-num">→</span> {{ fact.text }}</span
+              >
+              {%- endif %}
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
+        {%- endif %}
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-brand">Alt<span>Master</span></div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/alt-text-checker/">Free ALT Checker</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 AltMaster · Built by
+        <a
+          href="{{ site.brand.author_url }}"
+          style="color: inherit"
+          rel="noopener noreferrer"
+          >{{ site.brand.author_name }}</a
+        >
+      </div>
+    </footer>
+
+    <script src="../../js/analytics.js"></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        const a = e.target.closest("a[data-altmaster-placement]");
+        if (!a) return;
+        if (typeof window.amTrack === "function") {
+          window.amTrack("altmaster_install_click", {
+            placement: a.getAttribute("data-altmaster-placement") || "unknown",
+          });
+        }
+      });
+    </script>
+
+    <script>
+      (function () {
+        function boot() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "{{ site.brand.ga_id }}");
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id={{ site.brand.ga_id }}";
+          document.head.appendChild(s);
+        }
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(boot, { timeout: 4000 });
+        } else {
+          window.addEventListener("load", function () {
+            setTimeout(boot, 0);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

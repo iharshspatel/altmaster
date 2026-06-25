@@ -1,3 +1,9 @@
+---
+# Front matter makes Jekyll process the Liquid below. Blog entries are generated
+# from the posts collection, so publishing a post adds it here automatically.
+layout: null
+sitemap: false
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -17,42 +23,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+{%- for post in site.posts %}
   <url>
-    <loc>https://altmaster.io/blog/how-to-add-alt-text-in-shopify-using-ai/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://altmaster.io{{ post.url }}</loc>
+    <lastmod>{{ post.modified | default: post.date | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://altmaster.io/blog/shopify-image-size-guide-2026/</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://altmaster.io/blog/how-to-add-images-in-shopify/</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://altmaster.io/blog/how-to-add-alt-text-in-shopify/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://altmaster.io/blog/why-your-products-dont-show-up-on-chatgpt/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://altmaster.io/blog/importance-of-alt-text-in-shopify/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+{%- endfor %}
   <url>
     <loc>https://altmaster.io/about/</loc>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,165 @@
+# Sveltia CMS configuration for the AltMaster blog.
+# This drives the web form at /admin/. Each field below becomes an input;
+# saving a post writes _posts/<date>-<slug>.md and GitHub Pages publishes it.
+
+backend:
+  name: github
+  repo: iharshspatel/altmaster
+  branch: main
+  # URL of the sveltia-cms-auth Cloudflare Worker that handles "Sign in with
+  # GitHub". Replace after you deploy the worker (see admin/SETUP.md).
+  base_url: https://sveltia-cms-auth.harsh-f0d.workers.dev
+
+# Show edits live before they're merged.
+publish_mode: simple
+
+# Where uploaded images are stored / referenced from. Images land in
+# blog/uploads/ and are referenced by absolute path so they resolve from any
+# post URL. (Existing posts keep their own per-folder images — untouched.)
+media_folder: blog/uploads
+public_folder: /blog/uploads
+
+collections:
+  - name: posts
+    label: Blog Posts
+    label_singular: Blog Post
+    description: Write a post, fill the basics, and hit Publish. It goes live in about a minute.
+    folder: _posts
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "blog/{{slug}}/"
+    fields:
+      # --- Hidden plumbing ---
+      - { name: layout, label: Layout, widget: hidden, default: post }
+
+      # --- The essentials (every post needs these) ---
+      - name: title
+        label: Title (the big H1 headline)
+        widget: string
+      - name: date
+        label: Publish date
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - name: category
+        label: Category eyebrow
+        widget: string
+        hint: "Small label above the headline, e.g. Guide · Shopify SEO"
+      - name: description
+        label: Search & social description
+        widget: text
+        hint: "~150 characters. Shows in Google results and social shares."
+      - name: image
+        label: Cover image
+        widget: image
+        required: false
+        hint: "Hero image at the top, also used as the social-share preview. Optional."
+      - name: body
+        label: Article body
+        widget: markdown
+        hint: "The post itself: headings, paragraphs, images. Use Heading 2 for each section — the page builds its table of contents from them automatically."
+
+      # --- Blog index card (how the post appears in the /blog list) ---
+      - name: card_tag
+        label: "Index card: tag"
+        widget: string
+        hint: "Short tag on the card, e.g. Guide or Strategy"
+      - name: card_excerpt
+        label: "Index card: excerpt"
+        widget: text
+        hint: "1–2 sentence teaser shown on the blog index."
+      - name: read_time
+        label: "Index card: read time"
+        widget: string
+        default: "6 min read"
+      - name: card_title
+        label: "Index card: title override"
+        widget: string
+        required: false
+        hint: "Only if the card should read differently from the post title. Otherwise leave blank."
+
+      # --- Optional extras (nice to have, safe to skip) ---
+      - name: summary
+        label: "Short-answer box (optional)"
+        widget: markdown
+        required: false
+        hint: "A lead paragraph at the very top. Start it with **Short answer:**"
+      - name: quick_facts
+        label: "Quick facts sidebar (optional)"
+        widget: list
+        required: false
+        label_singular: Quick fact
+        summary: "{{fields.text}}"
+        fields:
+          - { name: text, label: Fact, widget: string }
+          - {
+              name: href,
+              label: Link to section (optional),
+              widget: string,
+              required: false,
+              hint: "e.g. #altmaster",
+            }
+      - name: faq
+        label: "FAQ section (optional)"
+        widget: list
+        required: false
+        label_singular: Question
+        summary: "{{fields.q}}"
+        hint: "These render as the visible FAQ section AND the Google FAQ rich-result automatically."
+        fields:
+          - { name: q, label: Question, widget: string }
+          - { name: a, label: Answer, widget: markdown }
+
+      # --- Advanced SEO overrides (all optional; blank = auto-filled) ---
+      - {
+          name: seo_title,
+          label: "SEO · browser tab title",
+          widget: string,
+          required: false,
+          hint: "Blank = '<Title> | AltMaster'",
+        }
+      - {
+          name: keywords,
+          label: "SEO · keywords",
+          widget: string,
+          required: false,
+          hint: "Comma-separated. Optional.",
+        }
+      - {
+          name: og_title,
+          label: "SEO · Facebook/OG title",
+          widget: string,
+          required: false,
+          hint: "Blank = the post title.",
+        }
+      - {
+          name: og_description,
+          label: "SEO · Facebook/OG description",
+          widget: text,
+          required: false,
+          hint: "Blank = the description above.",
+        }
+      - {
+          name: tw_title,
+          label: "SEO · Twitter title",
+          widget: string,
+          required: false,
+          hint: "Blank = the post title.",
+        }
+      - {
+          name: tw_description,
+          label: "SEO · Twitter description",
+          widget: text,
+          required: false,
+          hint: "Blank = the description above.",
+        }
+      - {
+          name: schema_description,
+          label: "SEO · structured-data description",
+          widget: text,
+          required: false,
+          hint: "Blank = the description above.",
+        }
