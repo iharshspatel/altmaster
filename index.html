@@ -1050,6 +1050,7 @@
         <a href="/alt-text-checker/" class="nav-link">Free ALT checker</a>
         <a href="/blog/" class="nav-link">Blog</a>
         <a href="/about/" class="nav-link">About</a>
+        <a href="/partners/" class="nav-link">Partners</a>
         <a href="#pricing" class="nav-link">Pricing</a>
         <a href="/contact/" class="nav-link">Contact</a>
         <a
@@ -1923,6 +1924,139 @@
       </div>
     </section>
 
+    <!-- ───────────────────────── PARTNERS ───────────────────────── -->
+    <style>
+      .home-partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 760px;
+        margin: 40px auto 0;
+      }
+      .home-partner-card {
+        background: #fff;
+        border: 1px solid var(--cream-3);
+        border-radius: 14px;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: left;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s,
+          border-color 0.2s;
+      }
+      .home-partner-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        border-color: var(--accent);
+      }
+      .home-partner-logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 13px;
+        overflow: hidden;
+        flex-shrink: 0;
+        border: 1px solid var(--cream-3);
+        background: #fff;
+      }
+      .home-partner-logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .home-partner-card h3 {
+        font-family: var(--serif);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 0;
+        line-height: 1.3;
+      }
+      .home-partner-cat {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0;
+      }
+      .home-partner-card p {
+        font-size: 14.5px;
+        color: var(--ink-2);
+        line-height: 1.6;
+        margin: 0;
+        flex: 1;
+      }
+      .home-partners-cta {
+        text-align: center;
+        margin-top: 28px;
+      }
+      @media (max-width: 700px) {
+        .home-partners {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <section class="section">
+      <div class="section-center">
+        <div class="section-eyebrow">Partners</div>
+        <h2>Apps we partner with.</h2>
+        <p class="lead">
+          AltMaster handles image SEO. These are the Shopify apps we trust and
+          recommend to handle the rest — they pair perfectly with AltMaster to
+          help your store build trust, keep customers, and grow.
+        </p>
+      </div>
+
+      <div class="home-partners">
+        <div class="home-partner-card">
+          <div class="home-partner-logo">
+            <img
+              src="/img/partners/judgeme.png"
+              alt="Judge.me app icon"
+              width="52"
+              height="52"
+              loading="lazy"
+            />
+          </div>
+          <p class="home-partner-cat">Product Reviews</p>
+          <h3>Judge.me Product Reviews</h3>
+          <p>
+            Collect unlimited photo and video reviews and surface star ratings
+            in Google results — the same search surface AltMaster's image SEO
+            works on, so the two compound.
+          </p>
+        </div>
+
+        <div class="home-partner-card">
+          <div class="home-partner-logo">
+            <img
+              src="/img/partners/klaviyo.png"
+              alt="Klaviyo app icon"
+              width="52"
+              height="52"
+              loading="lazy"
+            />
+          </div>
+          <p class="home-partner-cat">Email &amp; SMS Marketing</p>
+          <h3>Klaviyo: Email Marketing &amp; SMS</h3>
+          <p>
+            Turn store data into personalized email and SMS automations.
+            AltMaster brings shoppers in from search; Klaviyo brings them back.
+          </p>
+        </div>
+      </div>
+
+      <div class="home-partners-cta">
+        <a href="/partners/" class="nav-link" style="font-weight: 500"
+          >See all partners →</a
+        >
+      </div>
+    </section>
+
     <!-- ───────────────────────── FAQ ───────────────────────── -->
     <section class="section">
       <div class="section-center">
@@ -2053,6 +2187,7 @@
         <a href="/alt-text-checker/">Free ALT checker</a>
         <a href="/blog/">Blog</a>
         <a href="/about/">About</a>
+        <a href="/partners/">Partners</a>
         <a href="/contact/">Contact</a>
         <a href="/privacy/">Privacy</a>
       </div>
