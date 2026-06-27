@@ -127,6 +127,14 @@
       /* Shared supplements to the article layout — available to every post so
          authors never touch CSS. Superset of the per-post blocks the old
          hand-built posts each carried locally. */
+      .article-hero {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--cream-3);
+        display: block;
+        margin: 8px 0 32px;
+      }
       .article-body figure {
         margin: 28px 0;
       }
@@ -309,6 +317,15 @@
           <span>·</span>
           <span>{{ page.read_time }}</span>
         </div>
+
+        {%- if page.image %}
+        <img
+          class="article-hero"
+          src="{{ page.image }}"
+          alt="{{ page.image_alt | default: page.title | escape }}"
+          loading="eager"
+        />
+        {%- endif %}
 
         <div class="article-summary">
           {{ page.summary | markdownify }}
