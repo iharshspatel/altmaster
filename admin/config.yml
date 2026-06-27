@@ -19,6 +19,20 @@ publish_mode: simple
 media_folder: blog/uploads
 public_folder: /blog/uploads
 
+# Force every generated slug to be URL-safe ASCII: no spaces, accents, smart
+# quotes, em-dashes, or other Unicode that breaks Jekyll / GitHub Pages builds.
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Auto-rename uploaded images to safe, lowercase, hyphenated filenames the moment
+# they're added — so "My Cover Photo, v2.png" becomes "my-cover-photo-v2.png" and
+# never produces a broken image URL. Applies to all media uploads.
+media_libraries:
+  all:
+    slugify_filename: true
+
 collections:
   - name: posts
     label: Blog Posts
