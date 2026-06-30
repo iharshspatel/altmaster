@@ -16,6 +16,7 @@ read_time: "7 min read"
 card_excerpt: "Recommended dimensions, file formats, and compression targets for every image type on your store - products, hero, banner, logo, and blog - so it loads fast and ranks in 2026."
 card_title: "Shopify Image Size Guide for 2026"
 image: "https://altmaster.io/blog/shopify-image-size-guide-2026/cover.webp"
+image_alt: "Shopify image size guide 2026 showing recommended product image dimensions for desktop and mobile storefronts"
 summary: "**Short answer:** Use 2048 × 2048 px (1:1) for product photos, 1920 × 1080 px (16:9) for hero and banner images, and keep every file under 500 KB. Get your dimensions consistent and your files compressed, and your store loads faster, looks sharper, and ranks better on every device. And don't forget alt text - it's what lets Google actually read those images."
 toc:
   - { num: "01", label: "Why sizes matter", anchor: "why-sizes-matter" }
@@ -42,20 +43,6 @@ faq:
   - q: "Why do my images look blurry on mobile?"
     a: "This typically happens when your uploaded image is too small in resolution. Make sure product images are at least 800 × 800 px, and ideally 2048 × 2048 px, to maintain quality when Shopify scales them across devices."
 ---
-<figure>
-  <img
-    src="cover.webp"
-    width="1755"
-    height="896"
-    alt="Shopify image size guide 2026 showing recommended product image dimensions for desktop and mobile storefronts"
-    loading="eager"
-  />
-  <figcaption>
-    The right dimensions per image type keep a Shopify store fast,
-    sharp, and search-ready across desktop and mobile.
-  </figcaption>
-</figure>
-
 <p>
   If you've spent any time managing a Shopify store, you already know
   that product images are doing a lot of heavy lifting. They're your

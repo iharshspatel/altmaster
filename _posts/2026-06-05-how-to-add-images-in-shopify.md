@@ -16,6 +16,7 @@ read_time: "6 min read"
 card_excerpt: "A step-by-step guide to uploading product images in Shopify, the right sizes and formats, how to reorder them, and why ALT text decides whether they rank."
 card_title: "How to Add Images to Your Shopify Store"
 image: "https://altmaster.io/blog/how-to-add-images-in-shopify/cover.webp"
+image_alt: 'Shopify admin screenshot showing how to add images to a product page, using "Classic Green T-Shirt" as an example.'
 summary: "**Short answer:** Online, your product images do the job a customer's hands do in a physical store, so getting them right directly affects whether someone buys or bounces. Add images from **Products → your product → Media → Add media**, drag to reorder, and hit Save. Then make them count: consistent sizing, sharp resolution, and descriptive ALT text so search engines and AI assistants can actually read what's in the photo."
 toc:
   - { num: "01", label: "Why quality images matter", anchor: "why-images-matter" }
@@ -40,21 +41,6 @@ faq:
   - q: "Will adding more images slow down my store?"
     a: "Not significantly. Shopify automatically compresses and serves images through its CDN, so your page speed stays largely unaffected. That said, avoid uploading unnecessarily large files, keep originals under 20MB."
 ---
-<figure>
-  <img
-    src="cover.webp"
-    width="1536"
-    height="1024"
-    alt="Shopify admin screenshot showing how to add images to a product page, using &quot;Classic Green T-Shirt&quot; as an example."
-    loading="eager"
-  />
-  <figcaption>
-    Adding product images in Shopify takes a handful of clicks, but
-    doing it well is what separates a store that sells from one that
-    gets scrolled past.
-  </figcaption>
-</figure>
-
 <p>
   Your product might be exactly what a customer is looking for, but if
   the image doesn't do it justice, they'll scroll right past it. On a

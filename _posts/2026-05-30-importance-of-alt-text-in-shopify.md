@@ -15,6 +15,7 @@ card_tag: "Guide"
 read_time: "7 min read"
 card_excerpt: "Alt text does three jobs at once - SEO, accessibility, and legal compliance. What every Shopify merchant needs to know, plus a simple formula for writing it."
 image: "https://altmaster.io/blog/importance-of-alt-text-in-shopify/cover.webp"
+image_alt: "Infographic on why ALT text matters in Shopify, highlighting accessibility, SEO, better UX, and more sales, with a sample product page showing an olive green backpack"
 summary: "**Short answer:** Alt text does three jobs at once - SEO, accessibility, and legal compliance. It's a written description of your product image that customers never see, but Google, screen readers, and ADA lawyers all do. It's one of the easiest wins hiding inside your image settings, and most merchants skip it entirely."
 toc:
   - { num: "01", label: "What alt text does", anchor: "what-alt-does" }
@@ -41,20 +42,6 @@ faq:
   - q: "What if I have hundreds of products - where do I even start?"
     a: "Start with your bestsellers and most-visited pages first. Then use a bulk tool like AltMaster to catch everything else."
 ---
-<figure>
-  <img
-    src="cover.webp"
-    width="1536"
-    height="1024"
-    alt="Infographic on why ALT text matters in Shopify, highlighting accessibility, SEO, better UX, and more sales, with a sample product page showing an olive green backpack"
-    loading="eager"
-  />
-  <figcaption>
-    ALT text quietly does three jobs at once - SEO, accessibility, and
-    legal compliance - on every product image in your store.
-  </figcaption>
-</figure>
-
 <p>
   Let me ask you something real quick - when was the last time you
   looked at your product images and thought,

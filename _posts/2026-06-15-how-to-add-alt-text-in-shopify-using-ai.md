@@ -16,6 +16,7 @@ read_time: "6 min read"
 card_excerpt: "AI can generate SEO-friendly alt text for every product image in seconds, but only if you set it up right. Where AI wins, where it falls short, and how to run it across your whole catalog."
 card_title: "How to Write Alt Text for Your Shopify Store Using AI"
 image: "https://altmaster.io/blog/how-to-add-alt-text-in-shopify-using-ai/cover.png"
+image_alt: "How to Add Alt Text in Your Shopify Store Using AI - blog header showing a Shopify storefront on a laptop with AI-generated alt text labels on product images"
 summary: "**Short answer:** Yes, AI can write alt text for your Shopify store, and it's a massive time-saver. But it works best when you feed it your product context instead of letting it guess from pixels alone. Here's where AI shines, where it falls short, and how to run it across a full catalog without doing it by hand."
 toc:
   - { num: "01", label: "Why alt text matters", anchor: "why-it-matters" }
@@ -37,19 +38,6 @@ faq:
   - q: "How long does AltMaster take to set up?"
     a: "Under 10 minutes. Connect your store, configure your preferences, and the app handles the rest. Most stores see their full catalog covered within the first session."
 ---
-<figure>
-  <img
-    src="cover.png"
-    width="1672"
-    height="941"
-    alt="How to Add Alt Text in Your Shopify Store Using AI - blog header showing a Shopify storefront on a laptop with AI-generated alt text labels on product images"
-  />
-  <figcaption>
-    AI can describe every product image in your catalog in seconds,
-    if you set it up right.
-  </figcaption>
-</figure>
-
 <h2 id="why-it-matters">
   Why Alt Text Is a Big Deal for Your Shopify Store
 </h2>

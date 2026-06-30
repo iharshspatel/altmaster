@@ -16,6 +16,7 @@ read_time: "8 min read"
 card_excerpt: "What ALT text is, why it matters for SEO and AI search, and the step-by-step way to add it to your store today, by hand or in bulk."
 card_title: "How to Add ALT Text in Shopify (And Why You're Losing Sales Without It)"
 image: "https://altmaster.io/blog/how-to-add-alt-text-in-shopify/cover.webp"
+image_alt: "Infographic: ALT text makes your Shopify products visible to AI search, showing a storefront and AI tools reading the image's text"
 summary: "**Short answer:** ALT text is the description you attach to each product image. Google and AI assistants read it to understand what you sell, so images without it are effectively invisible in search. You can add it by hand in your Shopify admin, or fix a whole catalog at once with AltMaster. Here's exactly how, and why it matters more than ever."
 toc:
   - { num: "01", label: "What ALT text is", anchor: "what-is-alt-text" }
@@ -42,21 +43,6 @@ faq:
   - q: "Do I need a developer or an app to add ALT text in Shopify?"
     a: "No developer needed. You can do it directly in your Shopify admin by opening any product, clicking an image, and filling in the ALT text field. If you have a large catalog, a tool like AltMaster can speed things up by letting you update images in bulk instead of one by one."
 ---
-<figure>
-  <img
-    src="cover.webp"
-    width="512"
-    height="341"
-    alt="Infographic: ALT text makes your Shopify products visible to AI search, showing a storefront and AI tools reading the image's text"
-    loading="eager"
-  />
-  <figcaption>
-    ALT text is the small description Shopify lets you attach to every
-    product image, and it's how search engines understand what you
-    sell.
-  </figcaption>
-</figure>
-
 <p>
   You've got great products, solid photos, and a store that looks the
   part. But if your images don't have ALT text, Google is skipping
