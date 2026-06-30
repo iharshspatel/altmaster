@@ -138,12 +138,23 @@
       .article-body figure {
         margin: 28px 0;
       }
+      /* Any image dropped in via the rich-text editor renders as a bare <img>
+         (not wrapped in <figure>). Cap it to the column so it never overflows. */
+      .article-body img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--cream-3);
+        display: block;
+        margin: 28px auto;
+      }
       .article-body figure img {
         width: 100%;
         height: auto;
         border-radius: 14px;
         border: 1px solid var(--cream-3);
         display: block;
+        margin: 0;
       }
       .article-body figcaption {
         font-size: 13px;
