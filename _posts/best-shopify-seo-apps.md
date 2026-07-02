@@ -35,7 +35,7 @@ The good news? You don't need to be a technical SEO expert. The apps below handl
 
 Most of these apps offer a free plan. Start with one, fix your basics, and upgrade only when you need more. Installing 5+ overlapping SEO apps can actually slow your store down and create conflicting schema - so pick wisely.
 
-### **Quick Overview of Top 10 Shopify SEO Apps**
+## **Quick Overview of Top 10 Shopify SEO Apps**
 
 | **#** | **App Name** | **Category** | **Key Feature** | **Pricing** |
 | 1 | AltMaster | Image SEO | Bulk AI alt text for all product & variant images | Free plan available |
