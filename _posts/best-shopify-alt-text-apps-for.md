@@ -56,9 +56,10 @@ Most of these apps offer a free plan. Start with one, fix your basics, and upgra
 | 10 | Tiny SEO Speed Image Optimizer | Image + Speed SEO | LLMs.txt, AI meta, JSON-LD, | Free to install |
 
 ## **1.** [**AltMaster**](https://apps.shopify.com/alt-text-optimizer/?utm_campaign=content-marketing&utm_medium=best-shopify-alt-apps&utm_source=blog) **– Alt Text Optimizer**
+
 **Category:** Alt Text
 
-![AltMaster Alt Text Optimizer Shopify app – bulk update product image alt texts in one click, free plan available, by HSP Technologies ](/blog/uploads/alt-master.png "AltMaster ")
+![AltMaster Alt Text Optimizer Shopify app – bulk update product image alt texts in one click, free plan available, by HSP Technologies](/blog/uploads/alt-master.png "AltMaster")
 
 AltMaster does one thing and does it exceptionally well - bulk generating structured alt text for every product and variant image in your store using a smart variable system. Instead of AI image analysis, it lets you build templates using product title, variant options, tags, vendor, and product type, then apply them across your entire catalog in minutes.
 
@@ -81,6 +82,7 @@ Every color, size, and style variant gets correctly labeled so Google can accura
 **Best for:** Stores with large product catalogs that have never set image alt text, especially variant-heavy stores.
 
 ## **2.** [**AltKing**](https://apps.shopify.com/alt-text-automator-by-starapps) **– AI Alt Text SEO & ADA**
+
 **Category:** Alt Text + ADA
 
 ![AltKing AI Alt Text SEO and ADA Shopify app – optimize variant image alt texts using variable templates in one click for ADA and WCAG compliance, free, by StarApps](/blog/uploads/altking.png "AltKing")
@@ -179,7 +181,7 @@ SEOwill combines image SEO with AI content creation, site audits, image compress
 
 **Best for:** Stores looking for image SEO and AI content creation in one tool.
 
-## **6.** [**ALT SEO**](https://apps.shopify.com/altseo-ai-alt-text-generator) **– AI Alt Text Generator**![ ALT SEO AI Alt Text Generator Shopify app – AI-powered alt text for ADA, EAA, and WCAG accessibility compliance, free plan available, by Yassine Malti](/blog/uploads/alt-seo.png "ALT Seo ")
+## **6.** [**ALT SEO**](https://apps.shopify.com/altseo-ai-alt-text-generator) **– AI Alt Text Generator**![ALT SEO AI Alt Text Generator Shopify app – AI-powered alt text for ADA, EAA, and WCAG accessibility compliance, free plan available, by Yassine Malti](/blog/uploads/alt-seo.png "ALT Seo")
 
 **Category:** Alt Text AI
 
@@ -205,7 +207,7 @@ ALT SEO focuses on recurring automation and multilingual support, making it idea
 
 ## **7.** [**SEOLab**](https://apps.shopify.com/seolab) **– All in #1 SEO AI**
 
-![SEOLab All-in-One AI SEO Shopify app – 20+ SEO tools including alt text optimization, image SEO, and AI search visibility for ChatGPT and Google, free ](/blog/uploads/seo-llab.png "SEO Lab")
+![SEOLab All-in-One AI SEO Shopify app – 20+ SEO tools including alt text optimization, image SEO, and AI search visibility for ChatGPT and Google, free](/blog/uploads/seo-llab.png "SEO Lab")
 
 **Category:** All-in-One AI SEO
 
@@ -229,7 +231,7 @@ SEOLab offers a surprisingly complete SEO toolkit at no cost, covering image SEO
 
 ## **8.** [**Avada**](https://apps.shopify.com/ap-speed-optimizer) **Image & Page Speed Up**
 
-![Avada Image and Page Speed Up Shopify app – one-click speed boost with image compression and alt text generation, free plan available](/blog/uploads/avada-image.png "Avada ")
+![Avada Image and Page Speed Up Shopify app – one-click speed boost with image compression and alt text generation, free plan available](/blog/uploads/avada-image.png "Avada")
 
 **Category:** Image + Speed
 
@@ -255,7 +257,7 @@ Avada combines image optimization, performance improvements, and expert assistan
 
 ## **9.** [**Wixpa**](https://apps.shopify.com/ai-altgenius) **AI Image Alt Text**
 
-![Wixpa AI Image Alt Text Shopify app – automate image SEO with AI-generated alt text for product and blog images, free to install ](/blog/uploads/wixpa.png "Wixpa")
+![Wixpa AI Image Alt Text Shopify app – automate image SEO with AI-generated alt text for product and blog images, free to install](/blog/uploads/wixpa.png "Wixpa")
 
 **Category:** Alt Text AI
 
@@ -278,7 +280,7 @@ Wixpa supports products, blogs, collections, and metafield images, making it one
 
 **Best for:** Stores that publish a lot of content beyond product pages.
 
-## **10.** [**Tiny**](https://apps.shopify.com/smart-image-optimizer) **SEO Speed Image Optimizer**![Tiny SEO Speed Image Optimizer Shopify app – AI-powered image optimization and alt text generator, free to install, by TinyIMG ](/blog/uploads/tiny-alt-text.png "Tiny alt text ")
+## **10.** [**Tiny**](https://apps.shopify.com/smart-image-optimizer) **SEO Speed Image Optimizer**![Tiny SEO Speed Image Optimizer Shopify app – AI-powered image optimization and alt text generator, free to install, by TinyIMG](/blog/uploads/tiny-alt-text.png "Tiny alt text")
 
 **Category:** Image + Speed SEO
 
