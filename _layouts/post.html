@@ -373,7 +373,7 @@
             {%- assign sections = content | split: '<h2 id="' %}
             {%- for chunk in sections offset: 1 %}
             {%- assign anchor = chunk | split: '"' | first %}
-            {%- assign label = chunk | split: '>' | last | split: '</h2' | first %}
+            {%- assign label = chunk | split: '</h2' | first | strip_html | split: '">' | last | strip %}
             <li>
               <a href="#{{ anchor }}"
                 ><span class="toc-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span> {{ label }}</a
