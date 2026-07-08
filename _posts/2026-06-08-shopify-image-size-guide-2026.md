@@ -1,48 +1,67 @@
 ---
 layout: post
-title: "Shopify Image Size Guide for 2026 — Every Dimension You Need"
-seo_title: "Shopify Image Size Guide for 2026 | AltMaster"
-og_title: "Shopify Image Size Guide for 2026 — Every Dimension You Need"
-tw_title: "Shopify Image Size Guide for 2026"
-description: "The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready."
-og_description: "The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready."
-tw_description: "The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready."
-schema_description: "The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready."
-keywords: "shopify image size, shopify image size guide 2026, shopify product image size, shopify hero image size, shopify banner size, shopify image dimensions, webp shopify, image seo shopify, altmaster"
+title: Shopify Image Size Guide for 2026 - Every Dimension You Need
 date: 2026-06-08
-category: "Guide · Image SEO"
-card_tag: "Guide"
-read_time: "7 min read"
-card_excerpt: "Recommended dimensions, file formats, and compression targets for every image type on your store - products, hero, banner, logo, and blog - so it loads fast and ranks in 2026."
-card_title: "Shopify Image Size Guide for 2026"
-image: "https://altmaster.io/blog/shopify-image-size-guide-2026/cover.webp"
-image_alt: "Shopify image size guide 2026 showing recommended product image dimensions for desktop and mobile storefronts"
+category: Guide · Image SEO
+description: The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready.
+image: https://altmaster.io/blog/shopify-image-size-guide-2026/cover.webp
+card_tag: Guide
+card_excerpt: Recommended dimensions, file formats, and compression targets for every image type on your store - products, hero, banner, logo, and blog - so it loads fast and ranks in 2026.
+read_time: 7 min read
+card_title: Shopify Image Size Guide for 2026
 summary: "**Short answer:** Use 2048 × 2048 px (1:1) for product photos, 1920 × 1080 px (16:9) for hero and banner images, and keep every file under 500 KB. Get your dimensions consistent and your files compressed, and your store loads faster, looks sharper, and ranks better on every device. And don't forget alt text - it's what lets Google actually read those images."
-toc:
-  - { num: "01", label: "Why sizes matter", anchor: "why-sizes-matter" }
-  - { num: "02", label: "Responsive images", anchor: "responsive-images" }
-  - { num: "03", label: "Right dimensions", anchor: "choosing-dimensions" }
-  - { num: "04", label: "Size guidelines", anchor: "size-guidelines" }
-  - { num: "05", label: "Let Google read them", anchor: "altmaster" }
-  - { num: "06", label: "Final thoughts", anchor: "final-thoughts" }
-  - { num: "07", label: "FAQs", anchor: "faqs" }
 quick_facts:
-  - { text: "Products: 2048 × 2048 px (1:1)" }
-  - { text: "Hero/banner: 1920 × 1080 px (16:9)" }
-  - { text: "Compress under 500 KB each" }
-  - { text: "WebP is 25–35% smaller than JPEG" }
+  - text: 'Products: 2048 × 2048 px (1:1)'
+    href: ''
+  - text: 'Hero/banner: 1920 × 1080 px (16:9)'
+    href: ''
+  - text: Compress under 500 KB each
+    href: ''
+  - text: WebP is 25–35% smaller than JPEG
+    href: ''
 faq:
-  - q: "What is the best image size for Shopify product photos?"
-    a: "The recommended size is 2048 × 2048 pixels with a 1:1 square aspect ratio. This ensures clear zoom functionality, sharp display on high-resolution screens, and consistent alignment in product grids."
-  - q: "What file format should I use for Shopify images?"
-    a: "JPEG is your default for product photos, lifestyle images, and banners. PNG is best for logos, icons, and anything requiring a transparent background. Save JPEGs at 80–85% quality for the best balance of size and sharpness."
-  - q: "Does Shopify automatically optimize my images?"
-    a: "Yes - Shopify automatically generates responsive image sizes and serves WebP to supported browsers. However, you should still upload optimized images to keep your store fast."
-  - q: "What is the maximum image size Shopify allows?"
-    a: "Shopify supports images up to 5,000 × 5,000 pixels with a maximum file size of 20 MB."
-  - q: "Why do my images look blurry on mobile?"
-    a: "This typically happens when your uploaded image is too small in resolution. Make sure product images are at least 800 × 800 px, and ideally 2048 × 2048 px, to maintain quality when Shopify scales them across devices."
+  - q: What is the best image size for Shopify product photos?
+    a: The recommended size is 2048 × 2048 pixels with a 1:1 square aspect ratio. This ensures clear zoom functionality, sharp display on high-resolution screens, and consistent alignment in product grids.
+  - q: What file format should I use for Shopify images?
+    a: JPEG is your default for product photos, lifestyle images, and banners. PNG is best for logos, icons, and anything requiring a transparent background. Save JPEGs at 80–85% quality for the best balance of size and sharpness.
+  - q: Does Shopify automatically optimize my images?
+    a: Yes - Shopify automatically generates responsive image sizes and serves WebP to supported browsers. However, you should still upload optimized images to keep your store fast.
+  - q: What is the maximum image size Shopify allows?
+    a: Shopify supports images up to 5,000 × 5,000 pixels with a maximum file size of 20 MB.
+  - q: Why do my images look blurry on mobile?
+    a: This typically happens when your uploaded image is too small in resolution. Make sure product images are at least 800 × 800 px, and ideally 2048 × 2048 px, to maintain quality when Shopify scales them across devices.
+seo_title: Shopify Image Size Guide for 2026 | AltMaster
+keywords: shopify image size, shopify image size guide 2026, shopify product image size, shopify hero image size, shopify banner size, shopify image dimensions, webp shopify, image seo shopify, altmaster
+og_title: Shopify Image Size Guide for 2026 - Every Dimension You Need
+og_description: The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready.
+tw_title: Shopify Image Size Guide for 2026
+tw_description: The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready.
+schema_description: The complete 2026 Shopify image size guide - recommended dimensions, file formats, and alt text tips to keep your store fast, sharp, and search-ready.
+image_alt: Shopify image size guide 2026 showing recommended product image dimensions for desktop and mobile storefronts
+toc:
+  - num: '01'
+    label: Why sizes matter
+    anchor: why-sizes-matter
+  - num: '02'
+    label: Responsive images
+    anchor: responsive-images
+  - num: '03'
+    label: Right dimensions
+    anchor: choosing-dimensions
+  - num: '04'
+    label: Size guidelines
+    anchor: size-guidelines
+  - num: '05'
+    label: Let Google read them
+    anchor: altmaster
+  - num: '06'
+    label: Final thoughts
+    anchor: final-thoughts
+  - num: '07'
+    label: FAQs
+    anchor: faqs
 ---
+
 <p>
   If you've spent any time managing a Shopify store, you already know
   that product images are doing a lot of heavy lifting. They're your
