@@ -41,7 +41,7 @@ But here's the thing: it can't. The decisions you make before you launch - your 
 
 This checklist covers the 12 things that actually matter before you hit publish.
 
-## **1. Why Pre-Launch SEO Sets the Foundation for Everything**
+## **Why Pre-Launch SEO Sets the Foundation for Everything**
 
 SEO isn't a switch you flip on after launch. Google starts forming opinions about your store the moment it first crawls it - your site structure, your content quality, your page speed. First impressions with search engines are a lot like first impressions with customers: they stick.
 
@@ -49,7 +49,7 @@ Shopify's own SEO lead puts it plainly: "Most sites can expect to see measurable
 
 The stores that rank fastest are almost always the ones that did the boring foundational work before anyone ever visited them.
 
-## **2. Store Structure & Settings**
+## **Store Structure & Settings**
 
 ### **2.1 Set Up a Custom Domain**
 
@@ -65,7 +65,7 @@ You can edit these in Shopify under **Online Store → Preferences** for your ho
 
 Shopify automatically generates a sitemap at yourstore.com/sitemap.xml - but Google won't find it unless you tell it where to look. Set up[ Google Search Console](https://search.google.com/search-console/about), verify your domain, and submit your sitemap under the **Sitemaps** section. This tells Google which pages exist and speeds up initial indexing. Since SEO can take months to gain traction, getting indexed quickly is one of the best early moves you can make.
 
-## **3. Product & Collection Page Optimization**
+## **Product & Collection Page Optimization**
 
 ### **3.1 Write Keyword-Rich Product Titles & Descriptions**
 
@@ -77,7 +77,7 @@ For descriptions, write for humans first, then optimize. A description that genu
 
 Collection pages are some of the most powerful pages on your store for SEO - and almost every new store ignores them. Add at least one paragraph of unique copy to each collection page describing what's in it, who it's for, and what makes it worth browsing. A shallow structure where every page is only a few clicks from the homepage allows Google to index your site more efficiently - a clean collection organization directly supports that.[ ](https://testparty.ai/blog/shopify-alt-text-guide)[AltMaster](https://altmaster.io/blog/how-to-add-alt-text-in-shopify/)
 
-## **4. Image SEO Before You Go Live**
+## **Image SEO Before You Go Live**
 
 ### **4.1 Name Your Image Files Correctly**
 
@@ -95,7 +95,7 @@ For a store with 10–20 products and a handful of images each, you can knock th
 
 That's exactly where[ AltMaster](https://apps.shopify.com/alt-text-optimizer/?utm_campaign=content-marketing&utm_medium=shopify-seo-chek-list&utm_source=blog) comes in. It scans your entire Shopify catalog, identifies every image missing ALT text, and lets you generate descriptions in bulk using template variables - product name, variant, color - so every image gets unique, human-sounding ALT text in minutes, not days. For pre-launch stores that want image SEO done right without delaying their go-live date, it's the most practical solution available.
 
-## **5. Technical SEO Essentials**
+## **Technical SEO Essentials**
 
 ### **5.1 Enable SSL Certificate**
 
@@ -105,7 +105,7 @@ Every Shopify store gets a free SSL certificate - but make sure it's active befo
 
 Shopify has a known quirk: it can generate multiple URLs for the same product when that product appears in a collection. This creates duplicate content - two pages with identical content competing against each other in search. Shopify handles this automatically with canonical tags for most cases, but it's worth checking using[ Google Search Console](https://search.google.com/search-console/about) after you submit your sitemap. Also, avoid copying manufacturer product descriptions - they exist on hundreds of other stores, and Google will rank all of them above you.
 
-## **6. Speed & Mobile Readiness Check**
+## **Speed & Mobile Readiness Check**
 
 Page speed is a confirmed Google ranking factor, and most shoppers are on mobile. A store that loads slowly on a phone will rank lower and convert worse - that's not a trade-off worth making on launch day.
 
