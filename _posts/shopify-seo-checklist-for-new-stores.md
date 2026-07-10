@@ -51,39 +51,39 @@ The stores that rank fastest are almost always the ones that did the boring foun
 
 ## **Store Structure & Settings**
 
-### **2.1 Set Up a Custom Domain**
+### **Set Up a Custom Domain**
 
 A custom domain (yourstore.com) signals legitimacy to both Google and customers. Shopify's default yourstore.myshopify.com subdomain is fine for development, but it has no SEO value and looks unpolished. Connect your custom domain through **Settings → Domains** in your Shopify admin before launch -[ Shopify's domain setup guide](https://help.shopify.com/en/manual/domains) walks through the process step by step.
 
-### **2.2 Configure Your Title Tags & Meta Descriptions**
+### **Configure Your Title Tags & Meta Descriptions**
 
 Every page on your store has a title tag and meta description - and Shopify's defaults are generic at best. Keep page titles under 60 characters and incorporate relevant keywords into your meta descriptions. Your homepage title should include your brand name and your primary category. Your product pages should lead with the product name and key descriptor.[ ](https://testparty.ai/blog/how-to-add-alt-text-shopify-products-bulk)
 
 You can edit these in Shopify under **Online Store → Preferences** for your homepage, and directly on each product and collection page under the "Search engine listing" section. Don't skip this - it's one of the highest-impact things you can do in under an hour.
 
-### **2.3 Submit Your Sitemap to Google Search Console**
+### **Submit Your Sitemap to Google Search Console**
 
 Shopify automatically generates a sitemap at yourstore.com/sitemap.xml - but Google won't find it unless you tell it where to look. Set up[ Google Search Console](https://search.google.com/search-console/about), verify your domain, and submit your sitemap under the **Sitemaps** section. This tells Google which pages exist and speeds up initial indexing. Since SEO can take months to gain traction, getting indexed quickly is one of the best early moves you can make.
 
 ## **Product & Collection Page Optimization**
 
-### **3.1 Write Keyword-Rich Product Titles & Descriptions**
+### **Write Keyword-Rich Product Titles & Descriptions**
 
 Your product title is prime SEO real estate. Lead with the keyword a customer would actually search - not your internal product code or a branded name no one knows yet. Men's Slim-Fit Linen Shirt – Navy Blue will outperform The Coastal Breeze Top in search every single time, at least until your brand has real authority.
 
 For descriptions, write for humans first, then optimize. A description that genuinely helps someone make a buying decision will naturally include the keywords they searched for. Tools like[ Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) or[ Ubersuggest](https://neilpatel.com/ubersuggest/) can help you find the exact phrases your customers are using before you write a word.
 
-### **3.2 Optimize Your Collection Page Copy**
+### **Optimize Your Collection Page Copy**
 
 Collection pages are some of the most powerful pages on your store for SEO - and almost every new store ignores them. Add at least one paragraph of unique copy to each collection page describing what's in it, who it's for, and what makes it worth browsing. A shallow structure where every page is only a few clicks from the homepage allows Google to index your site more efficiently - a clean collection organization directly supports that.[ ](https://testparty.ai/blog/shopify-alt-text-guide)[AltMaster](https://altmaster.io/blog/how-to-add-alt-text-in-shopify/)
 
 ## **Image SEO Before You Go Live**
 
-### **4.1 Name Your Image Files Correctly**
+### **Name Your Image Files Correctly**
 
 Whatever your camera saves as IMG_5023.jpg, rename it before it touches your Shopify admin. Use descriptive, hyphenated file names that include your primary keyword: navy-slim-fit-linen-shirt-front.jpg tells Google exactly what it's looking at.[ Google's image SEO guidelines](https://developers.google.com/search/docs/appearance/google-images) confirm that descriptive file names are one of the key signals used to understand and rank images. Do this before uploading - Shopify doesn't update the image URL if you rename after the fact.
 
-### **4.2 Add ALT Text to Every Product Image**
+### **Add ALT Text to Every Product Image**
 
 ALT text is what Google reads when it crawls your product images. Without it, every image in your store is invisible to search engines - which means you're missing out on Google Images traffic entirely, on top of weaker product page [rankings](https://altmaster.io/blog/how-to-add-alt-text-in-shopify).
 
@@ -97,11 +97,11 @@ That's exactly where[ AltMaster](https://apps.shopify.com/alt-text-optimizer/?ut
 
 ## **Technical SEO Essentials**
 
-### **5.1 Enable SSL Certificate**
+### **Enable SSL Certificate**
 
 Every Shopify store gets a free SSL certificate - but make sure it's active before launch. An SSL certificate is what puts the padlock in your browser bar and changes your URL from http:// to https://. Google confirmed HTTPS as a ranking signal back in 2014, and today it's simply expected. Check it's active under **Settings → Domains** in your Shopify admin.
 
-### **5.2 Fix Duplicate Content Issues**
+### **Fix Duplicate Content Issues**
 
 Shopify has a known quirk: it can generate multiple URLs for the same product when that product appears in a collection. This creates duplicate content - two pages with identical content competing against each other in search. Shopify handles this automatically with canonical tags for most cases, but it's worth checking using[ Google Search Console](https://search.google.com/search-console/about) after you submit your sitemap. Also, avoid copying manufacturer product descriptions - they exist on hundreds of other stores, and Google will rank all of them above you.
 
