@@ -42,6 +42,7 @@ The good news is that the decisions that make photography better for customers -
 ## **The Right Way to Shoot Shopify Product Photos**
 
 ### **Lighting, Background & Angles That Convert**
+
 ![Side-by-side comparison of two product photography lighting setups for a green pump bottle: Natural Light (soft daylight, cost-effective, weather-dependent) versus Softbox Setup (consistent lighting, controlled, professional look).](/blog/uploads/side-by-side-comparison-of-two-product-photography-lighting-setups-for-a-green-pump-bottle-natural-light-soft-daylight-cost-effective-weather-dependent-versus-softbox-setup-consistent-lighting-controlled-professiona.png)
 
 You don't need an expensive studio. You need good light and a consistent setup you can repeat.
@@ -53,7 +54,8 @@ For backgrounds: clean, neutral backgrounds (white, light gray, soft gradients) 
 For angles: shoot front, back, both sides, a top-down or 45-degree view, 2–3 detail close-ups showing material and craftsmanship, and at least one lifestyle or in-use shot. That's your base set.
 
 ### **How Many Images Per Product Do You Actually Need**
-![ Infographic titled 'Shopify Product Photography Guide: How to Set Up Images That Actually Sell and Rank,' featuring a Shopify product page mockup of a green pump bottle with five-star ratings, a DSLR camera on a tripod, a studio softbox light, and icons for high-quality images, right lighting and angles, clean, consistent backgrounds, and better SEO and more sales. ](/blog/uploads/infographic-titled-shopify-product-photography-guide-how-to-set-up-images-that-actually-sell-and-rank-featuring-a-shopify-product-page-mockup-of-a-green-pump-bottle-with-five-star-ratings-a-dslr-camera-on-a-tripod-a-s.png)
+
+![Infographic titled 'Shopify Product Photography Guide: How to Set Up Images That Actually Sell and Rank,' featuring a Shopify product page mockup of a green pump bottle with five-star ratings, a DSLR camera on a tripod, a studio softbox light, and icons for high-quality images, right lighting and angles, clean, consistent backgrounds, and better SEO and more sales.](/blog/uploads/infographic-titled-shopify-product-photography-guide-how-to-set-up-images-that-actually-sell-and-rank-featuring-a-shopify-product-page-mockup-of-a-green-pump-bottle-with-five-star-ratings-a-dslr-camera-on-a-tripod-a-s.png)
 
 Research shows that products with 5–8 images have significantly higher conversion rates than those with fewer. Shopify allows up to 250 images per product - quality matters more than quantity.
 
