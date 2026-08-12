@@ -10,8 +10,24 @@ card_excerpt: Shopify locks image filenames after upload. Here's a simple workar
 read_time: 6 min read
 card_title: How to Rename Image Filenames in Bulk in Shopify
 summary: "**Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.**"
-quick_facts: []
-faq: []
+quick_facts:
+  - text: Shopify locks image filenames permanently at upload - there's no native way to rename an already-uploaded image
+    href: ''
+  - text: A store with 200 products and 4 images each means 800 individual delete-and-re-upload operations to fix filenames manually
+    href: ''
+  - text: Google treats hyphens as word separators and underscores as word joiners - navy-blue-shirt.jpg gives three keyword signals, navy_blue_shirt.jpg gives one
+    href: ''
+  - text: AltMaster renames already-uploaded images directly, with a before/after preview and full undo history before anything changes
+    href: https://apps.shopify.com/alt-text-optimizer/?utm_campaign=content-marketing&utm_medium=shopify-image-buil-filename-rename&utm_source=blog
+faq:
+  - q: Is there a free way to rename Shopify product images after they've been uploaded?
+    a: No native free option exists. Shopify locks the filename and URL at the point of upload. The only free path to changing a filename is deleting the image and re-uploading it with the correct name. For stores with a small number of affected images this is manageable. For larger catalogs, AltMaster's bulk filename renaming handles the full catalog directly without re-uploading anything.
+  - q: Can I bulk edit images on Shopify without using an app?
+    a: For ALT text, yes, using the CSV export method from your Shopify admin. For filenames, no, not without re-uploading each image individually. The CSV approach for ALT text works for stores with fewer than 100 products but becomes error-prone at a larger scale.
+  - q: What is the fastest way to do Shopify bulk edit image alt text across a large catalog?
+    a: For anything over 100 products, **AltMaster's bulk ALT text generator** handles the full catalog in one session using either AI that reads each image directly or a template system built from your product data variables, with a preview step before anything is written to your store and full undo history afterward.
+  - q: Is a filename and ALT text the same thing?
+    a: They're related but they serve different purposes. A filename is the name of the image file itself, for example navy-linen-shirt-front.jpg, and it's what Google reads from the image URL when it crawls your product page. ALT text is a written description you add to the image inside Shopify, and it's what Google reads to understand what the image is actually showing. Both contribute to image SEO but they work at different layers. The filename has to be set correctly before upload because Shopify locks it permanently once the image is live, or fixed afterward using a tool like AltMaster that renames files directly. ALT text can be added or edited at any time after upload, which is why fixing ALT text across an existing catalog is always the more immediately practical starting point.
 seo_title: How to Rename Image Filenames in Bulk in Shopify
 keywords: shopify product image rename free, bulk edit images shopify, shopify bulk edit image alt text,AltMaster , altmaster
 og_title: How to Rename Image Filenames in Bulk in Shopify
@@ -72,7 +88,7 @@ Use hyphens between words, not underscores. Google treats hyphens as word separa
 
 Here's where the free path runs out for most stores. If your images are already uploaded with generic filenames, there is no free way to rename them without re-uploading. But for the ALT text side of image SEO, which often carries more direct ranking weight than the filename itself, there is a practical path that doesn't require touching any image files.
 
-Unlike filenames, ALT text can be fully edited after upload. And for the filename problem itself,[ **AltMaster**](https://apps.shopify.com/alt-text-optimizer) now handles both sides of this in one place, which is what makes it worth understanding in detail.
+Unlike filenames, ALT text can be fully edited after upload. And for the filename problem itself,[ **AltMaster**](https://apps.shopify.com/alt-text-optimizer/?utm_campaign=content-marketing&utm_medium=shopify-image-buil-filename-rename&utm_source=blog) now handles both sides of this in one place, which is what makes it worth understanding in detail.
 
 **How AltMaster handles bulk ALT text:** It scans your entire Shopify catalog, surfaces every product image with missing or low-quality ALT text, and gives you two ways to fix it. The AI mode actually reads each image's pixels to write a description of what's in the photo, meaning image four of a product gets a different description from image one rather than the same title repeated. 
 
@@ -101,17 +117,3 @@ The practical dividing line is straightforward: if you're just starting out, bui
 The Shopify product image rename free options are real, but they only work before upload. Once images are in your store, filenames are locked and the only practical path to fixing them at scale is a tool that can rename already-uploaded files directly. ALT text is the more immediately fixable half of the equation: fully editable after upload, significant for both image search rankings and accessibility, and now fixable across an entire catalog using AI that reads the actual image rather than just rearranging your product title.
 
 Get your naming conventions right before your next product shoot. Fix your ALT text and filenames across what's already uploaded using the right tool for the job. Build both habits into your ongoing workflow so new products never go live as a blank or generic signal.
-
-## **FAQ**
-
-**Q: Is there a free way to rename Shopify product images after they've been uploaded?**
-No native free option exists. Shopify locks the filename and URL at the point of upload. The only free path to changing a filename is deleting the image and re-uploading it with the correct name. For stores with a small number of affected images this is manageable. For larger catalogs, AltMaster's bulk filename renaming handles the full catalog directly without re-uploading anything.
-
-**Q: Can I bulk edit images on Shopify without using an app?**
-For ALT text, yes, using the CSV export method from your Shopify admin. For filenames, no, not without re-uploading each image individually. The CSV approach for ALT text works for stores with fewer than 100 products but becomes error-prone at a larger scale.
-
-**Q: What is the fastest way to do Shopify bulk edit image alt text across a large catalog?**
-For anything over 100 products, **AltMaster's bulk ALT text generator** handles the full catalog in one session using either AI that reads each image directly or a template system built from your product data variables, with a preview step before anything is written to your store and full undo history afterward.
-
-**Q: Is a filename and ALT text the same thing?**
-They're related but they serve different purposes. A filename is the name of the image file itself, for example navy-linen-shirt-front.jpg, and it's what Google reads from the image URL when it crawls your product page. ALT text is a written description you add to the image inside Shopify, and it's what Google reads to understand what the image is actually showing. Both contribute to image SEO but they work at different layers. The filename has to be set correctly before upload because Shopify locks it permanently once the image is live, or fixed afterward using a tool like AltMaster that renames files directly. ALT text can be added or edited at any time after upload, which is why fixing ALT text across an existing catalog is always the more immediately practical starting point.
