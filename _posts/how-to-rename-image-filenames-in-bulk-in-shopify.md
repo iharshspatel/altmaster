@@ -1,24 +1,24 @@
 ---
 layout: post
-title: 'Shopify Product Image Rename: How to Bulk Edit Filenames & ALT Text'
+title: 'Shopify Product Image Rename: How to Bulk Edit Filenames'
 date: 2026-08-12
 category: Guide
-description: Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.
+description: Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.
 image: /blog/uploads/shopify-image-filename-rename.png
 card_tag: Guide
-card_excerpt: Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.
+card_excerpt: Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.
 read_time: 6 min read
-card_title: Bulk Rename Shopify Images & Fix ALT Text (Free Guide)
-summary: "**Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.**"
+card_title: How to Rename Image Filenames in Bulk in Shopify
+summary: "**Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.**"
 quick_facts: []
 faq: []
-seo_title: Bulk Rename Shopify Images & Fix ALT Text (Free Guide)
-keywords: ''
-og_title: Bulk Rename Shopify Images & Fix ALT Text (Free Guide)
+seo_title: How to Rename Image Filenames in Bulk in Shopify
+keywords: shopify product image rename free, bulk edit images shopify, shopify bulk edit image alt text,AltMaster , altmaster
+og_title: How to Rename Image Filenames in Bulk in Shopify
 og_description: Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.
-tw_title: Bulk Rename Shopify Images & Fix ALT Text (Free Guide)
-tw_description: Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.
-schema_description: Shopify locks filenames after upload. Here's what's free, what needs a tool, and the fastest way to fix ALT text across your whole catalog.
+tw_title: How to Rename Image Filenames in Bulk in Shopify
+tw_description: Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.
+schema_description: Shopify locks image filenames after upload. Here's a simple workaround to bulk rename your product photos without re-uploading a single file.
 ---
 
 If you've ever tried to do a Shopify product image rename after uploading your photos, you've probably hit the same wall most store owners hit: Shopify won't let you. The filename is locked the moment the image is uploaded, and there's no native way to change it after the fact.
