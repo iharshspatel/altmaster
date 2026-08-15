@@ -58,6 +58,7 @@ If you're running Meta ads and your ROAS data doesn't match what you're seeing i
 **Best for:** Stores running Facebook and Instagram ads who want reliable event tracking and accurate ROAS reporting.
 
 ### [**MetaShop: Instagram and Facebook**
+
 ](https://apps.shopify.com/ig-fb-shoppable-comments)![Shopify app listing for MetaShop showing products promoted through Instagram, Facebook, TikTok, X, and Pinterest with shoppable social media content.](/blog/uploads/metashop-instagram-facebook.png)
 
 **Rating:** 4.9 (375 reviews) | **Pricing:** Free plan available
@@ -69,6 +70,7 @@ MetaShop turns your social content into a direct sales channel. You can create s
 ## **Sales Conversion and AOV**
 
 ### [**Releasit COD Form and Upsells**
+
 ](https://apps.shopify.com/releasit-cod-order-form)![Shopify app listing for Releasit COD Form & Upsells featuring a one-click cash-on-delivery order form with upsells, downsells, and quantity offers.](/blog/uploads/releasit-cod-form-upsells.png)
 
 **Rating:** 4.9 (2,545 reviews) | **Pricing:** Free to install
@@ -78,6 +80,7 @@ For stores selling cash on delivery, Shopify's default checkout is a barrier. Re
 **Best for:** Dropshipping and COD-focused stores, especially in markets where cash on delivery is the dominant payment method.
 
 ### [**Bundler: Product Bundles**
+
 ](https://apps.shopify.com/bundler-product-bundles)![Shopify app listing for Bundler showcasing product bundles, quantity breaks, volume discounts, and promotional offers designed to increase sales.](/blog/uploads/bundler-product-bundles-app.png)
 
 **Rating:** 4.9 (2,503 reviews) | **Pricing:** Free plan available
@@ -97,6 +100,7 @@ A completely free countdown timer app that actually works cleanly. You can run f
 ## **Subscriptions**
 
 ### [**Appstle Subscriptions App**
+
 ](https://apps.shopify.com/subscriptions-by-appstle)![Shopify app listing for Appstle Subscriptions showcasing subscription management, recurring orders, subscription boxes, customer portals, and recurring payment tools.](/blog/uploads/appstle-subscriptions-app.png)
 
 **Rating:** 5.0 (8,190 reviews) | **Pricing:** Free plan available
@@ -108,6 +112,7 @@ Appstle is one of the highest-rated apps in the entire Shopify App Store - a 5.0
 ## **Orders and Shipping**
 
 ### [**17TRACK Order Tracking**
+
 ](https://apps.shopify.com/17track)![Shopify app listing for 17TRACK featuring branded order tracking, shipment notifications, delivery updates, and tracking analytics for Shopify stores.](/blog/uploads/17track-order-tracking.png)
 
 **Rating:** 4.9 (3,866 reviews) | **Pricing:** Free plan available
